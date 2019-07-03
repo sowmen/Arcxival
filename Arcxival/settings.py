@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'Arcxival.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'arcxival',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'Arcxival',
+        'USER': 'postgres',
+        'PASSWORD': 'admin',
         'HOST': 'localhost',
-        'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': '',
+        'PORT': '5432',
     }
 }
 

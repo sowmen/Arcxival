@@ -1,0 +1,24 @@
+#X {
+  font-size: 35px;
+}
+
+.icon.ion-android-settings {
+  font-size: 25px;
+}
+
+.fa.fa-plus {
+  font-size: 35px;
+}
+
+#btn-session {
+  border-radius: 10px;
+}
+
+button, input {
+  text-align: center;
+}
+
+button, input {
+  border-radius: 5px;
+}
+

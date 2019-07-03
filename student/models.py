@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
 from teacher.models import course,session
 
 # Create your models here.
@@ -16,3 +17,8 @@ class project(models.Model):
     group_name = models.CharField(max_length=100)
     course_code = models.ForeignKey('teacher.course', on_delete=models.CASCADE)
     session = models.ForeignKey('teacher.session', on_delete=models.CASCADE)
+    members = ArrayField(models.CharField(max_length=20),default=[], choices=(
+                        ('football', 'Football'), ('tennis', 'Tennis'), ('golf', 'Golf')))
+
+    def __str__(self):
+        return self.project_title

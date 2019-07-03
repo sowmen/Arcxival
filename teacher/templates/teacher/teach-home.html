@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Version1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Armata">
+    <link rel="stylesheet" href="styles.min.css">
+</head>
+
+<body style="font-size:14px;">
+<nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#e7f1f0;height:70px;">
+    <div class="container"><a class="navbar-brand" style="height:75px;width:103px;margin:0px;padding:6px;"
+                              href="#"><span class="brand-text">ARC</span><span id="X">X</span><span class="brand-text">IVAL</span></a>
+        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                class="navbar-toggler-icon"></span></button>
+        <div
+                class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation"><a class="nav-link active" style="font-size:16px;" href="#">Archive</a>
+                </li>
+                <li class="nav-item" role="presentation"><a class="nav-link" style="padding-top:1px;padding-left:39px;"
+                                                            href="#"><i class="icon ion-android-settings"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div style="height:400px;margin-top:84px;">
+    <div class="container">
+        <div class="row" style="padding:0px;padding-top:22px;height:300px;">
+            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-9" style="height:378px;">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="text-left"
+                            style="padding-left:6px;padding-top:13px;margin-left:-5px;padding-bottom:1px;margin-bottom:9px;font-size:21px;font-family:Armata, sans-serif;">
+                            Active Sessions</h3>
+                    </div>
+                    <div class="col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto text-right align-self-center">
+                        <a class="btn btn-primary" role="button" id="btn-session"
+                           style="margin:0px;margin-top:0px;margin-left:1px;background-color:rgba(22,115,54,0.68);font-family:Roboto, sans-serif;padding-top:9px;padding-right:0px;padding-bottom:0px;padding-left:0px;width:94px;height:40px;margin-right:0px;font-size:14px;"
+                           href="{% url 'createsession' %}"><i class="icon ion-plus-round" style="font-size:14px;"></i>&nbsp;
+                            Session</a></div>
+                </div>
+                <div class="row">
+                    <div class="col" style="padding-top:16px;">
+                        <div class="table-responsive table-bordered" id="cur-session-table"
+                             style="height:300px;margin-left:0px;font-size:14px;">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Course</th>
+                                    <th>Batch</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        asfjkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+                                    </td>
+                                    <td>sdnsndssssssssssssssssssssssssssssssssssssssssssssssssssssssss2</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height:400px;margin-bottom:40px;">
+    <div class="container">
+        <div class="row" style="padding:0px;padding-top:22px;height:300px;">
+            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-9" style="height:378px;">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="text-left"
+                            style="padding-left:6px;padding-top:13px;margin-left:-5px;padding-bottom:1px;margin-bottom:9px;font-size:21px;font-family:Armata, sans-serif;">
+                            Previous Sessions</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="padding-top:16px;">
+                        <div class="table-responsive table-bordered" id="prev-session-table"
+                             style="height:300px;margin-left:0px;">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Course</th>
+                                    <th>Batch</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Cell 1</td>
+                                    <td>Cell 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style="height: 200px;"></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
