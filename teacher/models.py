@@ -4,23 +4,27 @@ from django.db import models
 class teacher(models.Model):
     name = models.CharField(max_length=250)
     email = models.EmailField()
-    teacher_code = models.CharField(max_length=5)
+    teacher_code = models.CharField(max_length=5, primary_key=True)
 
     def __str__(self):
         return self.teacher_code + ' - ' + self.name
 
 class course(models.Model):
-    course_code = models.CharField(max_length=10)
+    course_code = models.CharField(max_length=10, primary_key=True)
     course_title = models.CharField(max_length=100)
     course_credit = models.FloatField()
+    teacher_code = models.ForeignKey(teacher, on_delete=models.SET_DEFAULT, default='NoTea')
+
 
     def __str__(self):
         return self.course_code
 
 class session(models.Model):
-    course_code = models.ForeignKey('course', on_delete=models.CASCADE)
-    batch = models.CharField(max_length=4)
+    course_code = models.ForeignKey(course, on_delete=models.SET_DEFAULT, default='def_cor')
+    batch = models.CharField(max_length=4,primary_key=True)
     date = models.DateField(auto_now=False,auto_now_add=False)
+    running = models.BooleanField(default=True)
+    teacher_code = models.ForeignKey(teacher, on_delete=models.CASCADE, default='notea')
 
     def __str__(self):
         return self.batch + '-' + self.course_code.course_code

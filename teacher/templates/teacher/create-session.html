@@ -30,7 +30,8 @@
     </div>
 </nav>
 <div class="container" style="margin-top: 126px;">
-    <form style="margin-top: 0px;" action="teach-home.html">
+    <form style="margin-top: 0px;" action="{% url 'thome' %}", method="POST">
+        {% csrf_token %}
         <div class="form-group form-inline"><label class="d-block"
                                                    style="font-size:18px;font-family:Actor, sans-serif;margin:0;margin-left:0px;width:133px;padding-left:6px;padding-right:0px;"
                                                    for="course-code-list">Course Code :&nbsp;</label><select

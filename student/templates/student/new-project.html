@@ -35,7 +35,8 @@
     </div>
 </nav>
 <div class="container" style="margin-top: 126px;">
-    <form id="new-project" action="{% url 'shome' %}">
+    <form id="new-project" action="{% url 'shome' %}", method="post">
+        {% csrf_token %}
         <div class="form-group form-inline"><label class="d-block"
                                                    style="font-size:18px;font-family:Actor, sans-serif;margin:0;margin-left:0px;width:133px;padding-left:6px;padding-right:0px;"
                                                    for="project-title-input">Project Title :</label><input
@@ -64,9 +65,9 @@
                                                                                                id="session-list"
                                                                                                style="width: 284px;margin-right: 0px;padding-right: 12px;margin-left: 6px;"
                                                                                                name="session-list">
-            {% for sessions in session.all %}
+            {% for session in sessions.all %}
                 <option>
-                {{ sessions.batch }}
+                {{ session.batch }} - {{ session.course_code }}
                 </option>
             {% endfor %}
         </select></div>

@@ -9,7 +9,19 @@ def shome(request):
 
 
 def newproject(request):
+    if request.method == 'POST':
+        project_title = request.POST.get('project-title')
+        group_name = request.POST.get('group-name')
+        course_code = request.POST.get('course-list')
+        session_val = request.POST.get('session-list')
+        members = request.POST.getlist('member-list')
+
+        s = student(project_title = project_title, group_name=group_name, course_code=course_code, session=session_val, members=members)
+        s.save()
+
     course_ob = course.objects
     session_ob = session.objects
-    student_ob = student.objects
-    return render(request, 'student/new-project.html', {'course':course_ob, 'session':session_ob, 'student':student_ob})
+    print("Here: ")
+    print(len(session.objects.all()))
+    student_ob = student.objects.exclude(reg_number='000')
+    return render(request, 'student/new-project.html', {'course':course_ob, 'student':student_ob, 'sessions':session_ob})
