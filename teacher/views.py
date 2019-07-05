@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from teacher.models import course, session, teacher
 from django.core import serializers
 
@@ -18,7 +18,8 @@ def thome(request):
             json_serializer = serializers.get_serializer('json')()
             json_serializer.serialize(session.objects.all(), stream=out)
 
-    return render(request, 'teacher/teach-home.html')
+    sessions_obj = session.objects.order_by('course_code','batch')
+    return render(request, 'teacher/teach-home.html', {'sessions': sessions_obj})
 
 def createsession(request):
     if(request.method == 'POST'):
@@ -31,3 +32,8 @@ def createsession(request):
 
     course_obj = course.objects
     return render(request, 'teacher/create-session.html', {'courses':course_obj})
+
+def batchinfo(request, batchno):
+    batch_obj = get_object_or_404(session, pk=batchno)
+    print(batch_obj)
+    return render(request, 'teacher/batch-details.html', {'batch_obj': batch_obj})

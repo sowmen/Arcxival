@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from teacher.models import course,session
 from .models import student, project
 
@@ -42,7 +42,9 @@ def shome(request):
                         member1_reg=member_reg[0], member2_reg=member_reg[1], member3_reg=member_reg[2])
             prj.save()
 
-    return render(request, 'student/student-home.html')
+    projects_ob = project.objects
+
+    return render(request, 'student/student-home.html', {'projects': projects_ob})
 
 def load_sessions(request):
     course_code = request.GET.get('course_code')
@@ -54,3 +56,8 @@ def newproject(request):
     session_ob = session.objects
     student_ob = student.objects.exclude(reg_number='000')
     return render(request, 'student/new-project.html', {'course':course_ob, 'student':student_ob, 'sessions':session_ob})
+
+def projectdetails(request, project_title, session):
+    print(project_title, session)
+    project_obj = get_object_or_404(project, project_title=project_title, session=session)
+    return render(request, 'student/project-details.html', {'project_obj':project_obj})

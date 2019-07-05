@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
+<style>
+
+    tr[data-href]:hover{
+        cursor: pointer;
+        background-color: #20c997;
+    }
+
+</style>
+
 <body>
 <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#e7f1f0;height:70px;">
     <div class="container"><a class="navbar-brand" style="height:75px;width:103px;margin:0px;padding:6px;"
@@ -50,7 +59,7 @@
                     <div class="col" style="padding-top:16px;">
                         <div class="table-responsive table-bordered" id="my-projects-table"
                              style="height: 400px;margin-left: 0px;font-size: 14px;">
-                            <table class="table table-striped table-bordered">
+                            <table class="table table-bordered">
                                 <thead>
                                 <tr>
                                     <th>Title</th>
@@ -59,7 +68,14 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
+                                {% for project in projects.all %}
+                                    <tr data-href = "{{ project.project_title }}/{{ project.session }}">
+                                    <td>{{ project.project_title }}</td>
+                                    <td>{{ project.course_code }}</td>
+                                    <td>{{ project.group_name }}</td>
+                                </tr>
+                                {% endfor %}
+                               <!-- <tr>
                                     <td>Cell 1</td>
                                     <td>Cell 2</td>
                                     <td>Cell 2</td>
@@ -128,7 +144,7 @@
                                     <td>Cell 3</td>
                                     <td>Cell 4</td>
                                     <td>Cell 4</td>
-                                </tr>
+                                </tr>-->
                                 </tbody>
                             </table>
                         </div>
@@ -142,6 +158,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/script.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+        $(document.body).on("click", "tr[data-href]", function(){
+            window.location.href = this.dataset.href;
+        });
+        });
+
+
+</script>
+
 </body>
 
 </html>
