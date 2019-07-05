@@ -1,6 +1,8 @@
 from django.db import models
 
 # Create your models here.
+
+
 class teacher(models.Model):
     name = models.CharField(max_length=250)
     email = models.EmailField()
@@ -9,15 +11,16 @@ class teacher(models.Model):
     def __str__(self):
         return self.teacher_code + ' - ' + self.name
 
+
 class course(models.Model):
     course_code = models.CharField(max_length=10, primary_key=True)
     course_title = models.CharField(max_length=100)
     course_credit = models.FloatField()
     teacher_code = models.ForeignKey(teacher, on_delete=models.SET_DEFAULT, default='NoTea')
 
-
     def __str__(self):
         return self.course_code
+
 
 class session(models.Model):
     course_code = models.ForeignKey(course, on_delete=models.SET_DEFAULT, default='def_cor')

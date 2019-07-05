@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.postgres.fields import ArrayField
 from teacher.models import course,session
 
 # Create your models here.

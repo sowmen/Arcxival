@@ -1,27 +1,56 @@
 from django.shortcuts import render
 from teacher.models import course,session
-from .models import student
+from .models import student, project
+
 
 # Create your views here.
 
+
 def shome(request):
-    return render(request, 'student/student-home.html')
 
-
-def newproject(request):
+    #Gets project details and creates a project.
     if request.method == 'POST':
         project_title = request.POST.get('project-title')
         group_name = request.POST.get('group-name')
-        course_code = request.POST.get('course-list')
-        session_val = request.POST.get('session-list')
-        members = request.POST.getlist('member-list')
+        course_code = course.objects.get(course_code=request.POST.get('course-list'))
+        session_val = session.objects.get(batch=request.POST.get('session-list'))
 
-        s = student(project_title = project_title, group_name=group_name, course_code=course_code, session=session_val, members=members)
-        s.save()
 
+        member_data_string = request.POST.get('my_data')
+        members = member_data_string.split(',')
+        member_reg = []
+        for val in members:
+            reg = ""
+            for c in val:
+                if c >= '0' and c <= '9':
+                    reg = reg + c
+                else:
+                    member_reg.append(student.objects.get(reg_number=reg))
+                    break
+
+        def_mem = student.objects.get(reg_number='000')
+        if len(member_reg) == 1:
+            prj = project(project_title=project_title, group_name=group_name, course_code=course_code, session=session_val,
+                        member1_reg=member_reg[0], member2_reg=def_mem, member3_reg=def_mem)
+            prj.save()
+        elif len(member_reg) == 2:
+            prj = project(project_title=project_title, group_name=group_name, course_code=course_code, session=session_val,
+                        member1_reg=member_reg[0], member2_reg=member_reg[1], member3_reg=def_mem)
+            prj.save()
+        elif len(member_reg) == 3:
+            prj = project(project_title=project_title, group_name=group_name, course_code=course_code, session=session_val,
+                        member1_reg=member_reg[0], member2_reg=member_reg[1], member3_reg=member_reg[2])
+            prj.save()
+
+    return render(request, 'student/student-home.html')
+
+def load_sessions(request):
+    course_code = request.GET.get('course_code')
+    sessions = session.objects.filter(course_code=course_code)
+    return render(request, 'student/session-dropdown-options.html', {'sessions': sessions})
+
+def newproject(request):
     course_ob = course.objects
     session_ob = session.objects
-    print("Here: ")
-    print(len(session.objects.all()))
     student_ob = student.objects.exclude(reg_number='000')
     return render(request, 'student/new-project.html', {'course':course_ob, 'student':student_ob, 'sessions':session_ob})
