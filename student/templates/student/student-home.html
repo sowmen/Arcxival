@@ -69,7 +69,7 @@
                                 </thead>
                                 <tbody>
                                 {% for project in projects.all %}
-                                    <tr data-href = "{{ project.project_title }}/{{ project.session }}">
+                                    <tr data-href = "{{ project.project_id }}">
                                     <td>{{ project.project_title }}</td>
                                     <td>{{ project.course_code }}</td>
                                     <td>{{ project.group_name }}</td>

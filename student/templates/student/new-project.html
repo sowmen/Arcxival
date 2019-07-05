@@ -67,11 +67,11 @@
                                                                                                style="width: 284px;margin-right: 0px;padding-right: 12px;margin-left: 6px;"
                                                                                                name="session-list"
                                                                                                required>
-{#            {% for session in sessions.all %}#}
-{#                <option>#}
-{#                {{ session.batch }}#}
-{#                </option>#}
-{#            {% endfor %}#}
+            {% for session in sessions.all %}
+                <option>
+                {{ session.batch }}
+                </option>
+            {% endfor %}
         </select></div>
         <h5 class="text-left" style="padding-left: 6px;padding-top: 6px;margin-top: 40px;">Group Members&nbsp;<i
                 class="la la-group" style="font-size: 28px;"></i>&nbsp;</h5>

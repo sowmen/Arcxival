@@ -21,6 +21,7 @@ class student(models.Model):
 
 class project(models.Model):
     project_title = models.CharField(max_length=300)
+    project_id = models.CharField(max_length=100, primary_key=True, default='pid')
     group_name = models.CharField(max_length=100)
     course_code = models.ForeignKey(course, on_delete=models.SET_DEFAULT, default=111, verbose_name='course')
     session = models.ForeignKey(session, on_delete=models.SET_DEFAULT, default=222, verbose_name='session')
