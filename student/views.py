@@ -1,8 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from teacher.models import course,session
-from .models import student, project
-
-
+from .models import student, project, file
+from django.core.files.storage import FileSystemStorage
+from .forms import fileform
 # Create your views here.
 
 
@@ -60,5 +60,13 @@ def newproject(request):
 
 def projectdetails(request, project_id):
     #print(project_title, session)
+    if request.method == 'POST':
+        uploaded_file = request.FILES['document']
+        # fs = FileSystemStorage()
+        # fs.save(uploaded_file.name, uploaded_file)
+
+        project_ob = project.objects.get(project_id=request.POST.get("project_id"))
+        file_obj = file(file_name=uploaded_file.name, project_id=project_ob, file_content=uploaded_file)
+        file_obj.save()
     project_obj = get_object_or_404(project, pk=project_id)
-    return render(request, 'student/project-details.html', {'project_obj':project_obj})
+    return render(request, 'student/upload.html', {'project_obj':project_obj})
