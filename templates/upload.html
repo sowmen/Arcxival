@@ -7,7 +7,7 @@
    <!-- <script src="dropzone.js"></script> -->
 </head>
 <body>
-<h1>Upload Page</h1>
+<h1>Upload Page Arcxival</h1>
 
 <form method="POST" enctype="multipart/form-data">
     {% csrf_token %}
@@ -21,7 +21,6 @@
     <tr>
         <th>File Name</th>
         <th>Download</th>
-        <th>Delete</th>
 
     </tr>
     </thead>
@@ -34,6 +33,8 @@
         <a href=" {{ file.file_content.url }}" class="btn btn-primary btn-sm">
             Download
         </a>
+        </td>
+
     </tr>
         {% endif %}
     {% endfor %}
