@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+{#{% if user.is_authenticated and type_obj.is_student %}#}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -23,6 +24,7 @@
 </style>
 
 <body>
+
 <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#e7f1f0;height:70px;">
     <div class="container"><a class="navbar-brand" style="height:75px;width:103px;margin:0px;padding:6px;"
                               href="#"><span class="brand-text">ARC</span><span id="X">X</span><span class="brand-text">IVAL</span></a>
@@ -32,6 +34,7 @@
                 class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Archive</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'logout' %}">Logout</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" style="padding-top:1px;padding-left:39px;"
                                                             href="#"><i class="icon ion-android-settings"></i></a></li>
             </ul>
@@ -171,5 +174,6 @@
 </script>
 
 </body>
-
+{#{% endif %}#}
+NOT STUDENT
 </html>

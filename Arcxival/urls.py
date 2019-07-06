@@ -20,12 +20,13 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', views.home),
+    path('', views.home, name='home'),
     # path('accounts/', include('allauth.urls')),
     # path('accounts/signup/', views.signup , name='signup'),
     # path('accounts/signup/student/', views.signup_student, name='signup_student'),
     # path('accounts/signup/teacher/', views.signup_teacher, name='signup_teacher'),
     path('teacherhome/', include('teacher.urls'), name='thome'),
     path('studenthome/', include('student.urls'), name='shome'),
+    path('logout/', views.logout_view, name='logout'),
 
 ]
