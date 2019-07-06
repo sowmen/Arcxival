@@ -31,13 +31,17 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'teacher.apps.TeacherConfig',
     'student.apps.StudentConfig',
+    'customuser.apps.CustomuserConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
+
+AUTH_USER_MODEL = 'customuser.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -80,7 +84,7 @@ DATABASES = {
         'OPTIONS': {
             'sql_mode': 'traditional',
         },
-        'NAME': 'arcxival',
+        'NAME': 'data',
         'HOST': 'localhost',
         'PORT': '3306',
         'USER': 'root',
@@ -119,11 +123,12 @@ USE_L10N = True
 
 USE_TZ = True
 
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/    '
+# LOGIN_REDIRECT_URL = '/'
+# LOGOUT_REDIRECT_URL = '/    '
 STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'

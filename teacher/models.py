@@ -1,11 +1,12 @@
 from django.db import models
-
+from customuser.models import user_type, User
 # Create your models here.
 
 
 class teacher(models.Model):
+    email = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=250)
-    email = models.EmailField()
+    # email = models.EmailField()
     teacher_code = models.CharField(max_length=5, primary_key=True)
 
     def __str__(self):
