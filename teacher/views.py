@@ -1,25 +1,29 @@
 from django.shortcuts import render, get_object_or_404
 from teacher.models import course, session, teacher
 from django.core import serializers
+from customuser.models import user_type
 
 # Create your views here.
 
 def thome(request):
-    if(request.method == 'POST'):
-        course_code = course.objects.get(course_code=request.POST.get('course-code-list'))
-        batch = request.POST.get('batch')
-        date = request.POST.get('start-date')
-        t_code = teacher.objects.get(teacher_code='MSI')
+    if request.user.is_authenticated and user_type.objects.get(user=request.user).is_teach:
+        if(request.method == 'POST'):
+            course_code = course.objects.get(course_code=request.POST.get('course-code-list'))
+            batch = request.POST.get('batch')
+            date = request.POST.get('start-date')
+            t_code = teacher.objects.get(teacher_code='MSI')
 
-        sn = session(course_code=course_code, batch=batch, date=date, teacher_code=t_code)
-        sn.save()
+            sn = session(course_code=course_code, batch=batch, date=date, teacher_code=t_code)
+            sn.save()
 
-        with open("file.json", "w") as out:
-            json_serializer = serializers.get_serializer('json')()
-            json_serializer.serialize(session.objects.all(), stream=out)
+            with open("file.json", "w") as out:
+                json_serializer = serializers.get_serializer('json')()
+                json_serializer.serialize(session.objects.all(), stream=out)
 
-    sessions_obj = session.objects.order_by('course_code','batch')
-    return render(request, 'teacher/teach-home.html', {'sessions': sessions_obj})
+        sessions_obj = session.objects.order_by('course_code','batch')
+        return render(request, 'teacher/teach-home.html', {'sessions': sessions_obj})
+    else:
+        print("TEACHER NA")
 
 def createsession(request):
     if(request.method == 'POST'):

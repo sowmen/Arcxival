@@ -1,13 +1,15 @@
 from django.db import models
 from teacher.models import course,session
 import os
+from customuser.models import User
 
 # Create your models here.
 
 class student(models.Model):
+    email = models.OneToOneField(User, on_delete=models.CASCADE)
     reg_number = models.CharField(max_length=10, primary_key=True, default='000')
     name = models.CharField(max_length=250)
-    email = models.EmailField()
+    # email = models.EmailField()
 
     def __str__(self):
         return self.reg_number + ' - ' + self.name
