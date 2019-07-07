@@ -1,183 +1,171 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
+{% load static %}
 
-{#{% if user.is_authenticated and type_obj.is_student %}#}
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Version1</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+{% block head %}
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Armata">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
-</head>
 
-<style>
+    <style>
+        tr[data-href]:hover {
+            cursor: pointer;
+            background-color: #20c997;
+        }
+    </style>
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static "cssp/mdb.min.css" %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static "cssp/style.css" %}" rel="stylesheet">
+    <!-- MDBootstrap Datatables  -->
+    <link href="{% static "cssp/addons/datatables.min.css" %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <style media="screen">
+        .dtHorizontalVerticalExampleWrapper {
+            max-width: 750px;
+            margin: 0 auto;
+        }
 
-    tr[data-href]:hover{
-        cursor: pointer;
-        background-color: #20c997;
-    }
+        #dtHorizontalVerticalExample th, td {
+            white-space: nowrap;
+        }
 
-</style>
+        table.dataTable thead .sorting:after,
+        table.dataTable thead .sorting:before,
+        table.dataTable thead .sorting_asc:after,
+        table.dataTable thead .sorting_asc:before,
+        table.dataTable thead .sorting_asc_disabled:after,
+        table.dataTable thead .sorting_asc_disabled:before,
+        table.dataTable thead .sorting_desc:after,
+        table.dataTable thead .sorting_desc:before,
+        table.dataTable thead .sorting_desc_disabled:after,
+        table.dataTable thead .sorting_desc_disabled:before {
+            bottom: .5em;
+        }
+    </style>
+    <style>
+        thead th {
+            background-color: #1c313a;
+            color: #ffffff;
+            text-indent: 13px;
+        }
 
-<body>
+        tbody tr {
+
+            text-indent: 10px;
+            background-color: white;
+            color: black;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        tbody tr[data-href]:hover {
+            cursor: pointer;
+            background-color: #62757f;
+            color: white;
+        }
+    </style>
+
+{% endblock %}
 
 
+{% block body %}
+    <div style="margin-top:130px;">
+        <div class="container">
 
-<nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#e7f1f0;height:70px;">
-    <div class="container"><a class="navbar-brand" style="height:75px;width:103px;margin:0px;padding:6px;"
-                              href="#"><span class="brand-text">ARC</span><span id="X">X</span><span class="brand-text">IVAL</span></a>
-        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
-                class="navbar-toggler-icon"></span></button>
-        <div
-                class="collapse navbar-collapse" id="navcol-1">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Archive</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'logout' %}">Logout</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" style="padding-top:1px;padding-left:39px;"
-                                                            href="#"><i class="icon ion-android-settings"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<div style="height:400px;margin-top:84px;">
-    <div class="container" style="padding-top: 150px;">
-    <h1>{{ request.user }}</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="text-left"
+                                style="padding-left:6px;padding-top:13px;margin-left:-5px;padding-bottom:1px;margin-bottom:9px;font-size:21px;font-family: 'Ubuntu', sans-serif;">
+                                MY PROJECTS</h3>
+                            <hr style="background-color: #0d0d0d">
+                        </div>
+                        <div class="col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto offset-0 text-right align-self-baseline">
+                            <a href="{% url 'newproject' %}" class="btn btn-default"><i class="fas fa-plus"
+                                                                                        style="padding-right: 5px;"></i>New
+                                Project</a>
+                        </div>
 
-        <div class="row" style="padding:0px;padding-top:22px;height:300px;">
-            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-9" style="height:378px;">
-                <div class="row">
-                    <div class="col">
-                        <h3 class="text-left"
-                            style="padding-left:6px;padding-top:13px;margin-left:-5px;padding-bottom:1px;margin-bottom:9px;font-size:21px;font-family:Armata, sans-serif;">
-                            My Projects</h3>
                     </div>
-                    <div class="col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto offset-0 text-right align-self-baseline">
-                        <a class="btn btn-primary text-nowrap text-center" role="button" id="btn-project"
-                           style="margin: 0px;margin-top: 0px;margin-left: 0px;background-color: rgba(22,115,54,0.68);font-family: Roboto, sans-serif;padding-top: 10px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;width: 116px;height: 41px;margin-right: 0px;font-size: 14px;"
-                           href="{% url 'newproject' %}"><i class="icon ion-plus-round" style="font-size:14px;"></i>&nbsp;
-                            New Project</a></div>
-                </div>
-                <div class="row">
-                    <div class="col" style="padding-top:16px;">
-                        <div class="table-responsive table-bordered" id="my-projects-table"
-                             style="height: 400px;margin-left: 0px;font-size: 14px;">
-                            <table class="table table-bordered">
+                    <div class="row" style="margin-top: 20px">
+                        <div class="col">
+                            <table id="dtHorizontalVerticalExample" class="table table-bordered table-sm "
+                                   cellspacing="0"
+                                   width="100%">
                                 <thead>
                                 <tr>
                                     <th>Title</th>
                                     <th>Course</th>
                                     <th>Group</th>
-                                    <th>Memeber</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                {% for project in projects %}
 
-                                    <tr data-href = "{{ project.project_id}}">
-                                    <td>{{ project.project_title }}</td>
-                                    <td>{{ project.member1_reg }}</td>
-                                    <td>{{ project.member2_reg }}</td>
-                                    <td>{{ project.member3_reg }}</td>
-                                </tr>
+                                {% for project in projects %}
+                                    <tr data-href="{{ project.project_id }}">
+                                        <td>{{ project.project_title }}</td>
+                                        <td>{{ project.course_code }}</td>
+                                        <td>{{ project.group_name }}</td>
+                                    </tr>
                                 {% endfor %}
-                               <!-- <tr>
-                                    <td>Cell 1</td>
-                                    <td>Cell 2</td>
-                                    <td>Cell 2</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                    <td>Cell 4</td>
-                                </tr>-->
                                 </tbody>
                             </table>
                         </div>
                     </div>
+
+
                 </div>
+
             </div>
+
         </div>
     </div>
-</div>
-<footer style="height: 200px;"></footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/script.min.js"></script>
+{% endblock %}
 
-<script>
 
-    $(document).ready(function(){
-        $(document.body).on("click", "tr[data-href]", function(){
-            window.location.href = this.dataset.href;
+
+{% block scripts %}
+    <footer style="height: 200px;"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(document.body).on("click", "tr[data-href]", function () {
+                window.location.href = this.dataset.href;
+            });
         });
+    </script>
+    <script type="text/javascript" src="{% static "jsp/jquery-3.4.1.min.js" %}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{% static "jsp/popper.min.js" %}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{% static "jsp/mdb.min.js" %}"></script>
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="{% static "jsp/addons/datatables.min.js" %}"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#dtHorizontalVerticalExample').DataTable({
+                "scrollX": true,
+                "scrollY": true,
+            });
+            $('.dataTables_length').addClass('bs-select');
         });
+    </script>
+    <script>
 
-
-</script>
-
-</body>
-</html>
+        $(document).ready(function () {
+            $(document.body).on("click", "tr[data-href]", function () {
+                window.location.href = this.dataset.href;
+            });
+        });
+    </script>
+{% endblock %}

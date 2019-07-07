@@ -48,13 +48,14 @@ def shome(request):
         student_obj = student.objects.get(email=request.user)
         proj = []
         projects = project.objects.raw("select * from student_project where member1_reg_id LIKE %s OR member2_reg_id LIKE %s OR member3_reg_id LIKE %s",[student_obj.reg_number,student_obj.reg_number,student_obj.reg_number])
-        # for x in projects:
-        #     print(x)
+        for x in projects:
+            print(x)
+        #print(projects)
         return render(request, 'student/student-home.html', {'projects': projects})
 
     else:
-        print("STUDENT NA")
-        return HttpResponse(request, '<h1>STUDENT NA</h1>')
+        if request.user.is_authenticated and user_type.objects.get(user=request.user).is_teach:
+            return redirect('thome')
 
 def load_sessions(request):
     if request.user.is_authenticated and user_type.objects.get(user=request.user).is_student:
@@ -62,8 +63,8 @@ def load_sessions(request):
         sessions = session.objects.filter(course_code=course_code)
         return render(request, 'student/session-dropdown-options.html', {'sessions': sessions})
     else:
-        print("STUDENT NA")
-        return HttpResponse(request, '<h1>STUDENT NA</h1>')
+        if request.user.is_authenticated and user_type.objects.get(user=request.user).is_teach:
+            return redirect('thome')
 
 def newproject(request):
     if request.user.is_authenticated and user_type.objects.get(user=request.user).is_student:
@@ -72,8 +73,8 @@ def newproject(request):
         student_ob = student.objects.exclude(reg_number='000')
         return render(request, 'student/new-project.html', {'course':course_ob, 'student':student_ob, 'sessions':session_ob})
     else:
-        print("STUDENT NA")
-        return HttpResponse(request, '<h1>STUDENT NA</h1>')
+        if request.user.is_authenticated and user_type.objects.get(user=request.user).is_teach:
+            return redirect('thome')
 
 def projectdetails(request, project_id):
     #print(project_title, session)

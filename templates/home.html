@@ -1,17 +1,82 @@
+{% load static %}
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>SignUp Page</title>
+    <!--  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
 </head>
+
 <body>
-<form method="POST">
-    {% csrf_token %}
-    <label for="email"> Email : </label>
-    <input type="email" id="email" name="email">
-    <label for="password"> Password: </label>
-    <input type="password" id="password" name="password">
-    <button type="submit">SUBMIT</button>
-</form>
+
+<div class="container">
+    <div class="text">
+        <h1 style="font-size: 70px;padding-bottom: 0px;">Arcxival</h1>
+    </div>
+
+    <div class="container sec">
+        <div class="login-signup">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <div class="row">
+
+                    <div class="col-sm-6 mobile-pull">
+                        <article role="login" style="background-color: #f1f8e9">
+                            <h1 class="text-center" style="padding-right: 10px;"><i class="fa fa-lock"></i><span
+                                    style="padding-left: 10px;">Login</span></h1>
+                            <p></p>
+                            <form class="signup" method="POST">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email Address" name="email">
+                                </div>
+                                <p></p>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password" name="password">
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> remember me
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <p></p>
+                                    <input type="submit" id="btntext" class="btn btn-success btn-block" value="SUBMIT">
+                                </div>
+                            </form>
+
+                            <footer role="signup" class="text-center">
+                                <p></p>
+                                <p></p>
+
+                            </footer>
+
+                        </article>
+                    </div>
+
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of home -->
+
+            </article>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
 </body>
+
 </html>

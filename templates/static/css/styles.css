@@ -1,0 +1,74 @@
+@font-face {
+  font-family: moon;
+  src: url("../Moon2.0-Regular.otf");
+}
+@font-face {
+  font-family: azonix;
+  src: url("../Azonix.otf");
+}
+
+.container{
+  padding-top: 10px;
+}
+
+#X {
+  font-size: 38px;
+}
+.footer{
+  background-color: #0b2e13;
+}
+.icon.ion-android-settings {
+  font-size: 25px;
+}
+
+.fa.fa-plus {
+  font-size: 35px;
+}
+
+#btn-session {
+  border-radius: 10px;
+}
+
+button, input {
+  text-align: center;
+}
+
+button, input {
+  border-radius: 5px;
+}
+
+
+.anim{
+  color: YELLOW;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-decoration-color: YELLOW;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  /*padding: ;*/
+  position: relative;
+}
+.anim:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: YELLOW;
+  color: YELLOW;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.anim:hover:after {
+  width: 85%;
+  left: 7px;
+  color: YELLOW;
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}

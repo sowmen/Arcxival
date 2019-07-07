@@ -1,0 +1,212 @@
+@font-face {
+    font-family: azonix;
+    src: url('../Azonix.otf');
+}
+
+#btntext {
+    font-size: 24px;
+    height: 50px;
+    text-align: center;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.container {
+    /* margin-left: 24%; */
+    margin-top: 100px;
+    margin-bottom: 5px
+}
+
+.container.sec {
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.text {
+    text-align: center;
+    font-family: azonix, sans-serif;
+    padding-right: 50px;
+    font-stretch: extra-expanded;
+    font-size: 12pt;
+    padding-bottom: 0px;
+}
+
+.login-signup {
+    padding: 0 0 25px;
+}
+
+.btn-success {
+    background: #23bab5;
+    border-radius: 0;
+    border: 2px solid #23bab5;
+    webkit-transition: all 400ms cubic-bezier(.4, 0, .2, 1);
+    transition: all 400ms cubic-bezier(.4, 0, .2, 1);
+}
+
+.btn-success:hover, .btn-success:focus {
+    background: rgba(26, 161, 157, 0);
+    border: 2px solid #1aa19d;
+    webkit-transition: all 400ms cubic-bezier(.4, 0, .2, 1);
+    transition: all 400ms cubic-bezier(.4, 0, .2, 1);
+    color: #23BAB5;
+}
+
+a {
+    color: #23bab5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+article[role="login"] {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
+    webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 30px 50px;
+    margin-bottom: 20px;
+}
+
+article[role="login"] input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+article[role="login"]:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 15px rgba(0, 0, 0, 0.23);
+    webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+article[role="login"] h1 {
+    font-size: 50px;
+    font-weight: 300;
+    color: #23bab5;
+    margin-bottom: 20px;
+}
+
+article[role="login"] p {
+    font-size: 16px;
+    padding: 5px 15px;
+}
+
+.nav-tab-holder {
+    padding: 0 0 0 30px;
+    float: right;
+}
+
+.nav-tab-holder .nav-tabs {
+    border: 0;
+    float: none;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.nav-tab-holder .nav-tabs > li {
+    margin-bottom: -3px;
+    text-align: center;
+    padding: 2px 6px;
+    display: table-cell;
+    float: none;
+    padding: 0;
+}
+
+.nav-tab-holder .nav-tabs > li > a {
+    background: #d9d9d9;
+    background-size: 5px 6px;
+    color: #6c6c6c;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.nav-tab-holder .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #FFF;
+    background-color: #23bab5;
+    border: 0;
+    border-radius: 0;
+}
+
+.mobile-pull {
+    float: right;
+}
+
+article[role="manufacturer"] {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
+    padding: 0 0 40px;
+    max-width: 420px;
+    margin: -45px auto 0;
+}
+
+article[role="manufacturer"] header {
+    background: #23bab5;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+article[role="manufacturer"] h1 {
+    font-size: 26px;
+    font-weight: 300;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 25px 15px;
+}
+
+article[role="manufacturer"] ul {
+    padding: 0 25px;
+}
+
+article[role="manufacturer"] ul li {
+    font-size: 16px;
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px 15px;
+    color: #404040;
+}
+
+article[role="manufacturer"] ul li i {
+    color: #23bab5;
+}
+
+.login-signup {
+    padding: 0 0 25px;
+}
+
+@media only screen and (max-width: 767px) {
+    .mobile-pull {
+        float: none;
+    }
+
+    .nav-tab-holder {
+        float: none;
+        overflow: hidden;
+    }
+
+    .nav-tabs > li > a {
+        font-size: 13px;
+        font-weight: 600;
+        padding: 15px 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .nav-tabs > li {
+        width: 75%;
+    }
+}
+
+.name {
+    width: 5%
+}
+
+
+.form-control {
+    height: 55px;
+    font-size: 17px;
+}

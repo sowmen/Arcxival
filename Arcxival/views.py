@@ -28,3 +28,12 @@ def home(request):
 def logout_view(request):
     logout(request)
     return redirect('/')
+
+def archive_courses(request):
+    return render(request, 'archive_courses.html')
+
+def archive_Sessions(request):
+    return render(request, 'archive_Sessions.html')
+
+def archive_Projects(request):
+    return render(request, 'teacher_projects.html.')

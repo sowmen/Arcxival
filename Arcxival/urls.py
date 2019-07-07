@@ -30,6 +30,9 @@ urlpatterns = [
     path('teacherhome/', include('teacher.urls'), name='thome'),
     path('studenthome/', include('student.urls'), name='shome'),
     path('logout/', views.logout_view, name='logout'),
+    path('archive_Courses/', views.archive_courses, name='archive_courses'),
+    path('archive_Sessions/', views.archive_Sessions, name='archive_Sessions'),
+    path('archive_Projects/', views.archive_Projects, name='archive_Projects'),
     #path('media/<int:pk>/', views.delete_file, name="delete_file"),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
