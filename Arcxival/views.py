@@ -3,6 +3,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, get_user_model, logout
 from django.conf import settings
 from customuser.models import user_type
+from teacher.models import course, session
+
 
 def home(request):
     if(request.method == 'POST'):
@@ -30,7 +32,8 @@ def logout_view(request):
     return redirect('/')
 
 def archive_courses(request):
-    return render(request, 'archive_courses.html')
+    courses = course.objects,all
+    return render(request, 'archive_courses.html', {'courses': courses})
 
 def archive_Sessions(request):
     return render(request, 'archive_Sessions.html')

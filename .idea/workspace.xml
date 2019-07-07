@@ -2,1027 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fad481b-1088-4b5c-a620-f77e1a606ca6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/student/static/student/css/new_project.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templates/student/archive_Sessions.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templates/student/projectitems.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/archive_Projects.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/archive_Sessions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/archive_courses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/Azonix.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/Moon2.0-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/addons/datatables-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/addons/datatables-select.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/addons/datatables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/addons/datatables.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/addons/directives.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/addons/directives.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/mdb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/mdb.lite.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/mdb.lite.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/mdb.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/modules/animations-extended.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/modules/animations-extended.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/responsive.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/css/ui.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/addons/datatables-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/addons/datatables-select.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/addons/datatables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/addons/datatables.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/addons/directives.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/addons/directives.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/mdb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/mdb.lite.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/mdb.lite.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/mdb.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/modules/animations-extended.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/modules/animations-extended.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/responsive.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/cssp/ui.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/css/fa-brands.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/css/fa-brands.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/css/fa-regular.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/css/fa-regular.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/css/fa-solid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/css/fa-solid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/css/fontawesome-all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/css/fontawesome-all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/css/fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/fa-brands.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/fa-regular.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/fa-solid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/scss/fontawesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/fontawesome/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/material-icons/material-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Thin.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/Roboto-Thin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/font/roboto/font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/css/fa-brands.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/css/fa-brands.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/css/fa-regular.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/css/fa-regular.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/css/fa-solid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/css/fa-solid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/css/fontawesome-all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/css/fontawesome-all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/css/fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/fa-brands.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/fa-regular.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/fa-solid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/scss/fontawesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/fontawesome/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/material-icons/material-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Thin.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/Roboto-Thin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fontp/roboto/font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/css/fa-brands.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/css/fa-brands.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/css/fa-regular.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/css/fa-regular.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/css/fa-solid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/css/fa-solid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/css/fontawesome-all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/css/fontawesome-all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/css/fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/fa-brands.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/fa-regular.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/fa-solid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/scss/fontawesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/fontawesome/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/material-icons/MaterialIcons-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/material-icons/MaterialIcons-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/material-icons/MaterialIcons-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/material-icons/MaterialIcons-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/material-icons/material-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/roboto/Roboto-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/roboto/Roboto-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/roboto/Roboto-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/roboto/Roboto-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/roboto/Roboto-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/fonts/roboto/font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/avatars/avatar1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/avatars/avatar2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/avatars/avatar3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/banners/banner-request.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/banners/bg-cpu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/banners/bg-pattern.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/banners/slide1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/banners/slide2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/banners/slide3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/brand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/flag-in.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/flag-kr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/flag-tr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/flag-usa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/flag-vt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/pay-american-ex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/pay-bank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/pay-mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/pay-visa-el.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/pay-visa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/rating-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/rating-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/rating-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/icons/rating-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/items/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/items/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/items/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/items/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/items/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/items/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/items/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/items/comp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/items/item-sm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/items/item-sm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/logo-dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/logo-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/logos/logo-alibaba.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/logos/logo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/logos/logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/logos/logo3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/logos/logo4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/logos/logo5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/posts/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/posts/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/posts/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/posts/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/posts/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/posts/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/avatars/avatar1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/avatars/avatar2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/avatars/avatar3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/banners/banner-request.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/banners/bg-cpu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/banners/bg-pattern.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/banners/slide1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/banners/slide2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/banners/slide3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/brand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/flags.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/flag-in.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/flag-kr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/flag-tr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/flag-usa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/flag-vt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/pay-american-ex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/pay-bank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/pay-mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/pay-visa-el.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/pay-visa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/rating-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/rating-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/rating-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/icons/rating-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/items/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/items/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/items/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/items/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/items/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/items/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/items/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/items/comp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/items/item-sm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/items/item-sm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/lightbox/default-skin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/lightbox/default-skin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/lightbox/preloader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/logo-dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/logo-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/logos/logo-alibaba.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/logos/logo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/logos/logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/logos/logo3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/logos/logo4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/logos/logo5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/overlays/01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/overlays/02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/overlays/03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/overlays/04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/overlays/05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/overlays/06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/overlays/07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/overlays/08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/overlays/09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/posts/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/posts/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/posts/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/posts/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/posts/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/posts/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/sample.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/svg/arrow_left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/svg/arrow_right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/img/svg/flags.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/avatars/avatar1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/avatars/avatar2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/avatars/avatar3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/banners/banner-request.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/banners/bg-cpu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/banners/bg-pattern.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/banners/slide1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/banners/slide2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/banners/slide3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/brand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/flags.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/flag-in.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/flag-kr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/flag-tr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/flag-usa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/flag-vt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/pay-american-ex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/pay-bank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/pay-mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/pay-visa-el.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/pay-visa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/rating-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/rating-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/rating-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/icons/rating-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/items/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/items/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/items/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/items/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/items/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/items/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/items/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/items/comp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/items/item-sm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/items/item-sm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/lightbox/default-skin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/lightbox/default-skin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/lightbox/preloader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/logo-dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/logo-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/logos/logo-alibaba.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/logos/logo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/logos/logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/logos/logo3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/logos/logo4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/logos/logo5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/overlays/01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/overlays/02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/overlays/03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/overlays/04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/overlays/05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/overlays/06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/overlays/07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/overlays/08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/overlays/09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/posts/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/posts/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/posts/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/posts/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/posts/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/posts/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/sample.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/svg/arrow_left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/svg/arrow_right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/imgp/svg/flags.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/addons/datatables-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/addons/datatables-select.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/addons/datatables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/addons/datatables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/addons/imagesloaded.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/addons/jquery.zmd.hierarchical-display.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/addons/jquery.zmd.hierarchical-display.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/addons/masonry.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/addons/rating.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/jquery-2.0.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/mdb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/mdb.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/modules/bs-custom-file-input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/modules/chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/modules/enhanced-modals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/modules/forms-free.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/modules/jquery.easing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/modules/scrolling-navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/modules/treeview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/modules/velocity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/modules/velocity.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/modules/waves.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/modules/wow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/addons/datatables-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/addons/datatables-select.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/addons/datatables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/addons/datatables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/addons/imagesloaded.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/addons/jquery.zmd.hierarchical-display.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/addons/jquery.zmd.hierarchical-display.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/addons/masonry.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/addons/rating.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/jquery-2.0.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/mdb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/mdb.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/modules/bs-custom-file-input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/modules/chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/modules/enhanced-modals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/modules/forms-free.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/modules/jquery.easing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/modules/scrolling-navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/modules/treeview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/modules/velocity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/modules/velocity.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/modules/waves.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/modules/wow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/jsp/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/fancybox/fancybox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/fancybox/fancybox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/fancybox/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/owlcarousel/assets/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/owlcarousel/assets/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/owlcarousel/assets/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/owlcarousel/assets/owl.theme.default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/owlcarousel/assets/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/owlcarousel/assets/owl.theme.green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/owlcarousel/assets/owl.theme.green.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/owlcarousel/assets/owl.video.play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/owlcarousel/owl.carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/owlcarousel/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/prism/prism.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/prism/prism.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/slickslider/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/slickslider/fonts/slick.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/slickslider/fonts/slick.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/slickslider/fonts/slick.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/slickslider/fonts/slick.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/slickslider/slick-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/slickslider/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/slickslider/slick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/plugins/slickslider/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/fancybox/fancybox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/fancybox/fancybox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/fancybox/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/owlcarousel/assets/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/owlcarousel/assets/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/owlcarousel/assets/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/owlcarousel/assets/owl.theme.default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/owlcarousel/assets/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/owlcarousel/assets/owl.theme.green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/owlcarousel/assets/owl.theme.green.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/owlcarousel/assets/owl.video.play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/owlcarousel/owl.carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/owlcarousel/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/prism/prism.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/prism/prism.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/slickslider/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/slickslider/fonts/slick.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/slickslider/fonts/slick.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/slickslider/fonts/slick.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/slickslider/fonts/slick.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/slickslider/slick-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/slickslider/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/slickslider/slick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/pluginsp/slickslider/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/_variables-custom.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_code.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_background-variant.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_caret.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_grid-framework.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_hover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_nav-divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_reset-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_resize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_table-row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_text-emphasis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_text-hide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_text-truncate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/mixins/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_embed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_screenreaders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_shadows.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap-assets/utilities/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/responsive.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/_base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/components/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/components/_cards-product.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/components/_elements.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/components/_items.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/components/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/components/_menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/components/_plugin-styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/helpers/_bg.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/helpers/_grid-24.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/helpers/_helper-classes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/helpers/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/helpers/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/pages/_page-common.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/pages/_page-detail.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/pages/_page-home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/sections/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/sections/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui-assets/sections/_sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/sass/ui.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/_custom-skin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/_custom-styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/_custom-variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/_variables-custom.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/addons/_datatables-select.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/addons/_datatables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/addons/_directives.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/addons/_flags.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/addons/_hierarchical-display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_code.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_background-variant.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_caret.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_grid-framework.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_hover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_nav-divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_reset-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_resize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_table-row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_text-emphasis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_text-hide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_text-truncate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/mixins/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_embed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_screenreaders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_shadows.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap-assets/utilities/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/core/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/core/_global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/core/_helpers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/core/_masks.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/core/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/core/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/core/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/core/_waves.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/core/bootstrap/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/core/bootstrap/_rfs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/core/bootstrap/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_animations-basic.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_badges.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_carousels.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_depreciated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_dropdowns.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_footers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_loader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_modals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_msc.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_navbars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_steppers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_switch.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/_treeview.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/modules/animations-extended/_module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/free/modules/animations-extended/animations-extended.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/mdb.lite.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/mdb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/responsive.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/_base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/components/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/components/_cards-product.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/components/_elements.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/components/_items.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/components/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/components/_menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/components/_plugin-styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/helpers/_bg.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/helpers/_grid-24.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/helpers/_helper-classes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/helpers/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/helpers/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/pages/_page-common.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/pages/_page-detail.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/pages/_page-home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/sections/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/sections/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui-assets/sections/_sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scss/ui.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/_custom-skin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/_custom-styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/_custom-variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/_variables-custom.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/addons/_datatables-select.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/addons/_datatables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/addons/_directives.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/addons/_flags.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/addons/_hierarchical-display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_code.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_background-variant.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_caret.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_grid-framework.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_hover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_nav-divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_reset-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_resize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_table-row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_text-emphasis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_text-hide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_text-truncate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/mixins/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_embed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_screenreaders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_shadows.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap-assets/utilities/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/core/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/core/_global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/core/_helpers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/core/_masks.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/core/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/core/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/core/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/core/_waves.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/core/bootstrap/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/core/bootstrap/_rfs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/core/bootstrap/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_animations-basic.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_badges.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_carousels.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_depreciated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_dropdowns.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_footers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_loader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_modals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_msc.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_navbars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_steppers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_switch.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/_treeview.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/modules/animations-extended/_module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/free/modules/animations-extended/animations-extended.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/mdb.lite.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/mdb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/responsive.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/_base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/components/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/components/_cards-product.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/components/_elements.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/components/_items.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/components/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/components/_menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/components/_plugin-styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/helpers/_bg.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/helpers/_grid-24.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/helpers/_helper-classes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/helpers/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/helpers/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/pages/_page-common.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/pages/_page-detail.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/pages/_page-home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/sections/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/sections/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui-assets/sections/_sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/scssp/ui.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templates/student/new-project.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arcxival/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arcxival/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arcxival/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arcxival/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Arcxival/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arcxival/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.json" beforeDir="false" afterPath="$PROJECT_DIR$/file.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/css/Footer-Basic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/css/bootstrap-select.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/css/styles.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/MaterialIcons-Regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/font/material-icons/MaterialIcons-Regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/MaterialIcons-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/MaterialIcons-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/font/material-icons/MaterialIcons-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/MaterialIcons-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/font/material-icons/MaterialIcons-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/MaterialIcons-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/font/material-icons/MaterialIcons-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/ionicons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/ionicons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/ionicons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/ionicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/ionicons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/line-awesome.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/line-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/line-awesome.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/line-awesome.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/line-awesome.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/line-awesome.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/fonts/material-icons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/js/bootstrap-select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/js/create-session.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/assets/js/new-proj.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/dropzone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/new-project.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/session-dropdown-options.html" beforeDir="false" afterPath="$PROJECT_DIR$/student/templates/student/session-dropdown-options.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/templates/student/student-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/student/templates/student/student-home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/student/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/Footer-Basic.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/css/Footer-Basic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/MaterialIcons-Regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/fontp/material-icons/MaterialIcons-Regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/MaterialIcons-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/MaterialIcons-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/fontp/material-icons/MaterialIcons-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/MaterialIcons-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/fontp/material-icons/MaterialIcons-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/MaterialIcons-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/fontp/material-icons/MaterialIcons-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/ionicons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/ionicons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/ionicons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/ionicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/ionicons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/line-awesome.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/line-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/line-awesome.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/line-awesome.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/line-awesome.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/line-awesome.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/assets/fonts/material-icons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/bootstrap-select.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/bootstrap-select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/cssp/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/create-session.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/new-proj.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/styles.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/teach-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/templates/teacher/teach-home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/Footer-Basic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/bootstrap-select.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/styles.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/MaterialIcons-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/MaterialIcons-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/MaterialIcons-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/MaterialIcons-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/MaterialIcons-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/ionicons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/ionicons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/ionicons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/ionicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/ionicons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/line-awesome.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/line-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/line-awesome.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/line-awesome.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/line-awesome.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/line-awesome.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/material-icons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/bootstrap-select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/create-session.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/new-proj.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1073,27 +55,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/student/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="95" column="38" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/student/templates/student/student-home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1955">
-              <caret line="115" column="40" selection-start-line="115" selection-start-column="40" selection-end-line="115" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/teach-home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1513">
@@ -1102,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teacher/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
@@ -1111,6 +72,25 @@
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Arcxival/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/archive_courses.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-618" />
           </provider>
         </entry>
       </file>
@@ -1211,7 +191,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/Arcxival/settings.py" />
         <option value="$PROJECT_DIR$/Arcxival/urls.py" />
-        <option value="$PROJECT_DIR$/Arcxival/views.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/student/templates/student/student-home.html" />
         <option value="$PROJECT_DIR$/student/static/student/new_project.css" />
@@ -1223,6 +202,7 @@
         <option value="$PROJECT_DIR$/teacher/templates/teacher/teacher_projects.html" />
         <option value="$PROJECT_DIR$/teacher/urls.py" />
         <option value="$PROJECT_DIR$/teacher/views.py" />
+        <option value="$PROJECT_DIR$/Arcxival/views.py" />
       </list>
     </option>
   </component>
@@ -1253,52 +233,7 @@
             <path>
               <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
               <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="CSE 250" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="CSE 250" type="462c0819:PsiDirectoryNode" />
-              <item name="ACM2019CSE 250" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="CSE 336" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
               <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
@@ -1312,24 +247,6 @@
               <item name="student" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
@@ -1430,7 +347,7 @@
       <workItem from="1562485940773" duration="300000" />
       <workItem from="1562486281756" duration="6393000" />
       <workItem from="1562492724603" duration="8112000" />
-      <workItem from="1562500861324" duration="721000" />
+      <workItem from="1562500861324" duration="2184000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed project links">
       <created>1562347491476</created>
@@ -1446,11 +363,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562459811211</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed everything so far... except archive">
+      <created>1562501635902</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562501635902</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154488000" />
+    <option name="totallyTimeSpent" value="155951000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1463,7 +387,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15817694" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1496,10 +419,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed project links" />
     <MESSAGE value="implemented user based view" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented user based view" />
+    <MESSAGE value="Fixed everything so far... except archive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed everything so far... except archive" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/new-proj.js" />
     <entry file="file://$PROJECT_DIR$/student/templates/student/assets/js/create-session.js" />
     <entry file="file://$PROJECT_DIR$/templates/assets/js/new-proj.js" />
     <entry file="file://$PROJECT_DIR$/templates/assets/js/create-session.js" />
@@ -1639,16 +562,6 @@
           <caret line="34" column="76" selection-start-line="34" selection-start-column="76" selection-end-line="34" selection-end-column="76" />
           <folding>
             <element signature="e#632#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Arcxival/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1797,6 +710,21 @@
             <element signature="e#0#64#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Arcxival/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/archive_courses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-618" />
       </provider>
     </entry>
   </component>
