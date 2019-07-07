@@ -81,7 +81,7 @@ DATABASES = {
         'OPTIONS': {
             'sql_mode': 'traditional',
         },
-        'NAME': 'data',
+        'NAME': 'arcxival',
         'HOST': 'localhost',
         'PORT': '3306',
         'USER': 'root',

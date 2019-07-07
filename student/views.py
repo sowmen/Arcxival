@@ -16,9 +16,8 @@ def shome(request):
             project_title = request.POST.get('project-title')
             group_name = request.POST.get('group-name')
             course_code = course.objects.get(course_code=request.POST.get('course-list'))
-            session_val = session.objects.get(batch=request.POST.get('session-list'))
-            project_id = project_title+session_val.batch+session_val.course_code
-            #print(course_code.course_code)
+            session_val = session.objects.get(session_id=request.POST.get('session-list'))
+            project_id = project_title+session_val.batch+session_val.course_code.course_code
 
             member_data_string = request.POST.get('my_data')
             members = member_data_string.split(',')
@@ -46,18 +45,25 @@ def shome(request):
                             member1_reg=member_reg[0], member2_reg=member_reg[1], member3_reg=member_reg[2])
                 prj.save()
 
-        projects_ob = project.objects
-
-        return render(request, 'student/student-home.html', {'projects': projects_ob})
+        student_obj = student.objects.get(email=request.user)
+        proj = []
+        projects = project.objects.raw("select * from student_project where member1_reg_id LIKE %s OR member2_reg_id LIKE %s OR member3_reg_id LIKE %s",[student_obj.reg_number,student_obj.reg_number,student_obj.reg_number])
+        # for x in projects:
+        #     print(x)
+        return render(request, 'student/student-home.html', {'projects': projects})
 
     else:
         print("STUDENT NA")
         return HttpResponse(request, '<h1>STUDENT NA</h1>')
 
 def load_sessions(request):
-    course_code = request.GET.get('course_code')
-    sessions = session.objects.filter(course_code=course_code)
-    return render(request, 'student/session-dropdown-options.html', {'sessions': sessions})
+    if request.user.is_authenticated and user_type.objects.get(user=request.user).is_student:
+        course_code = request.GET.get('course_code')
+        sessions = session.objects.filter(course_code=course_code)
+        return render(request, 'student/session-dropdown-options.html', {'sessions': sessions})
+    else:
+        print("STUDENT NA")
+        return HttpResponse(request, '<h1>STUDENT NA</h1>')
 
 def newproject(request):
     if request.user.is_authenticated and user_type.objects.get(user=request.user).is_student:
@@ -71,19 +77,23 @@ def newproject(request):
 
 def projectdetails(request, project_id):
     #print(project_title, session)
-    if request.method == 'POST':
-        for uploaded_file in request.FILES.getlist('file'):
-            #uploaded_file = request.FILES['file']
-            # fs = FileSystemStorage()
-            # fs.save(uploaded_file.name, uploaded_file)
+    if request.user.is_authenticated:
+        if request.method == 'POST':
+            for uploaded_file in request.FILES.getlist('file'):
+                #uploaded_file = request.FILES['file']
+                # fs = FileSystemStorage()
+                # fs.save(uploaded_file.name, uploaded_file)
 
-            project_ob = project.objects.get(project_id=request.POST.get("project_id"))
-            file_obj = file(file_name=uploaded_file.name, project_id=project_ob, file_content=uploaded_file)
-            file_obj.save()
+                project_ob = project.objects.get(project_id=request.POST.get("project_id"))
+                file_obj = file(file_name=uploaded_file.name, project_id=project_ob, file_content=uploaded_file)
+                file_obj.save()
 
-    files = file.objects
-    project_obj = get_object_or_404(project, pk=project_id)
-    return render(request, 'upload.html', {'project_obj':project_obj,'files':files})
+        files = file.objects
+        project_obj = get_object_or_404(project, pk=project_id)
+        return render(request, 'upload.html', {'project_obj':project_obj,'files':files})
+    else:
+        print("TEACHER BA STUDENT NA")
+        return HttpResponse(request, '<h1>TEACHER BA STUDENT NA</h1>')
 
 
 # def delete_file(request, pk):

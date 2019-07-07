@@ -25,6 +25,8 @@
 
 <body>
 
+
+
 <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#e7f1f0;height:70px;">
     <div class="container"><a class="navbar-brand" style="height:75px;width:103px;margin:0px;padding:6px;"
                               href="#"><span class="brand-text">ARC</span><span id="X">X</span><span class="brand-text">IVAL</span></a>
@@ -42,7 +44,8 @@
     </div>
 </nav>
 <div style="height:400px;margin-top:84px;">
-    <div class="container">
+    <div class="container" style="padding-top: 150px;">
+    <h1>{{ request.user }}</h1>
 
         <div class="row" style="padding:0px;padding-top:22px;height:300px;">
             <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-9" style="height:378px;">
@@ -68,14 +71,17 @@
                                     <th>Title</th>
                                     <th>Course</th>
                                     <th>Group</th>
+                                    <th>Memeber</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                {% for project in projects.all %}
-                                    <tr data-href = "{{ project.project_id }}">
+                                {% for project in projects %}
+
+                                    <tr data-href = "{{ project.project_id}}">
                                     <td>{{ project.project_title }}</td>
-                                    <td>{{ project.course_code }}</td>
-                                    <td>{{ project.group_name }}</td>
+                                    <td>{{ project.member1_reg }}</td>
+                                    <td>{{ project.member2_reg }}</td>
+                                    <td>{{ project.member3_reg }}</td>
                                 </tr>
                                 {% endfor %}
                                <!-- <tr>
@@ -174,6 +180,4 @@
 </script>
 
 </body>
-{#{% endif %}#}
-NOT STUDENT
 </html>

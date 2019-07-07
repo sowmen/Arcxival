@@ -19,5 +19,5 @@ from . import views
 urlpatterns = [
     path('', views.thome, name='thome'),
     path('createsession/', views.createsession, name='createsession'),
-    path('<str:batchno>/', views.batchinfo, name='batchinfo'),
+    path('<str:session_id>/', views.batchinfo, name='batchinfo'),
 ]

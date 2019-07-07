@@ -25,7 +25,8 @@ class course(models.Model):
 
 class session(models.Model):
     course_code = models.ForeignKey(course, on_delete=models.SET_DEFAULT, default='def_cor')
-    batch = models.CharField(max_length=4,primary_key=True)
+    batch = models.CharField(max_length=4)
+    session_id = models.CharField(max_length=100, primary_key=True, default='default-session')
     date = models.DateField(auto_now=False,auto_now_add=False)
     running = models.BooleanField(default=True)
     teacher_code = models.ForeignKey(teacher, on_delete=models.CASCADE, default='notea')

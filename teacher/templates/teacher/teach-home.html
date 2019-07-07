@@ -22,6 +22,9 @@
 
 </style>
 
+<h1>{{ user_type.email }}</h1>
+
+
 
 <body style="font-size:14px;">
 <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#e7f1f0;height:70px;">
@@ -71,7 +74,7 @@
                                 <tbody>
                                 {% for session in sessions.all %}
                                     {% if session.running == True %}
-                                <tr data-href = "{{ session.batch }}">
+                                <tr data-href = "{{ session.session_id }}">
                                     <td>{{ session.course_code }}</td>
                                     <td>{{ session.batch }}</td>
                                 </tr>
@@ -137,7 +140,7 @@
                                 <tbody>
                                 {% for session in sessions.all %}
                                     {% if session.running == False %}
-                                <tr data-href = "{{ session.batch }}">
+                                <tr data-href = "{{ session.session_id }}">
                                     <td>{{ session.course_code }}</td>
                                     <td>{{ session.batch }}</td>
                                 </tr>
