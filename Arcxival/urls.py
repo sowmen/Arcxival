@@ -31,8 +31,10 @@ urlpatterns = [
     path('studenthome/', include('student.urls'), name='shome'),
     path('logout/', views.logout_view, name='logout'),
     path('archive_Courses/', views.archive_courses, name='archive_courses'),
-    path('archive_Sessions/', views.archive_Sessions, name='archive_Sessions'),
-    path('archive_Projects/', views.archive_Projects, name='archive_Projects'),
+    path('<str: session_id>/', views.archive_Sessions, name='archive_Sessions'),
+    path('archive_Sessions/<str:pk>', views.archive_Sessions, name='archive_Sessions'),
+    path('archive_Projects/<str:session_id>/<str:project_id>', views.projectdetails, name='projectdetails'),
+    path('archive_Projects/<str:pk>', views.archive_Projects, name='archive_Projects'),
     #path('media/<int:pk>/', views.delete_file, name="delete_file"),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

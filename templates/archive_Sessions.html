@@ -57,118 +57,24 @@
                 / Sessions
             </h4>
             <div class="row-sm">
+                {% for session in sessions.all %}
                 <div class="col-md-3 col-sm-6">
-                    <a href="{% url 'archive_Projects' %}">
+                    <a href="{% url 'archive_Projects' session.pk %}">
                         <figure class="card card-product">
                             <article class="box">
                                 <div class="b" style="font-size: 30px;text-align: center;">
                                     <h1>
-                                        2011-12
+                                        {{ session.batch }}
                                     </h1>
                                 </div>
                             </article> <!-- box.// -->
                         </figure> <!-- card // -->
                     </a>
                 </div>
+                {% endfor %}
 
 
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <figure class="card card-product">
-                            <article class="box">
-                                <div class="b" style="font-size: 30px;text-align: center;">
-                                    <h1>
-                                        2012-13
-                                    </h1>
-                                </div>
-                            </article> <!-- box.// -->
-                        </figure> <!-- card // -->
-                    </a>
-                </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <figure class="card card-product">
-                            <article class="box">
-                                <div class="b" style="font-size: 30px;text-align: center;">
-                                    <h1>
-                                        2013-14
-                                    </h1>
-                                </div>
-                            </article> <!-- box.// -->
-                        </figure> <!-- card // -->
-                    </a>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <figure class="card card-product">
-                            <article class="box">
-                                <div class="b" style="font-size: 30px;text-align: center;">
-                                    <h1>
-                                        2014-15
-                                    </h1>
-                                </div>
-                            </article> <!-- box.// -->
-                        </figure> <!-- card // -->
-                    </a>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <figure class="card card-product">
-                            <article class="box">
-                                <div class="b" style="font-size: 30px;text-align: center;">
-                                    <h1>
-                                        2015-16
-                                    </h1>
-                                </div>
-                            </article> <!-- box.// -->
-                        </figure> <!-- card // -->
-                    </a>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <figure class="card card-product">
-                            <article class="box">
-                                <div class="b" style="font-size: 30px;text-align: center;">
-                                    <h1>
-                                        2016-17
-                                    </h1>
-                                </div>
-                            </article> <!-- box.// -->
-                        </figure> <!-- card // -->
-                    </a>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <figure class="card card-product">
-                            <article class="box">
-                                <div class="b" style="font-size: 30px;text-align: center;">
-                                    <h1>
-                                        2017-18
-                                    </h1>
-                                </div>
-                            </article> <!-- box.// -->
-                        </figure> <!-- card // -->
-                    </a>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <figure class="card card-product">
-                            <article class="box">
-                                <div class="b" style="font-size: 30px;text-align: center;">
-                                    <h1>
-                                        2018-19
-                                    </h1>
-                                </div>
-                            </article> <!-- box.// -->
-                        </figure> <!-- card // -->
-                    </a>
-                </div>
 
 
             </div>
