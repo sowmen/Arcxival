@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fad481b-1088-4b5c-a620-f77e1a606ca6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/student/templates/student/new-project.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arcxival/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arcxival/views.py" afterDir="false" />
+    <list default="true" id="2fad481b-1088-4b5c-a620-f77e1a606ca6" name="Default Changelist" comment="Fixed everything so far... except archive">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/16815812-4d05-4f41-8b59-9f3d5ea52018.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 250/ACM2019CSE 250/OS-lab-1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 250/ACM2019CSE 250/OS_Lab1_01_11_75_2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 250/ACM2019CSE 250/OS_Lab1_20163310_55_89_93.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 250/ACM2019CSE 250/c.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 250/ACM2019CSE 250/test.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 336/ABC2016CSE 336/OS-lab-1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 336/Arcxival2019CSE 336/OS-lab-1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 336/Arcxival2019CSE 336/OS_Lab1_01_11_75.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 336/Arcxival2019CSE 336/OS_Lab1_01_11_75_2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 336/Arcxival2019CSE 336/OS_Lab1_20163310_55_89_93.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 336/Arcxival2019CSE 336/OS_Lab_Assignment01.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 336/Arcxival2019CSE 336/OS_Lab_Assignment01_wu3nVJR.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 336/Arcxival2019CSE 336/count.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 336/Arcxival2019CSE 336/lab2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 336/OS2019CSE 336/OS_Lab1_01_11_75_2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/CSE 336/OS2019CSE 336/OS_Lab_Assignment01.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/templates/teacher/teacher_projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,15 +71,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/teach-home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="89" column="28" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teacher/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
@@ -87,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/archive_courses.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-618" />
+            <state relative-caret-position="-465" />
           </provider>
         </entry>
       </file>
@@ -99,6 +106,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
               <caret line="78" column="33" lean-forward="true" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -168,7 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/teacher/admin.py" />
         <option value="$USER_HOME$/Documents/New folder/create-session.html" />
         <option value="$PROJECT_DIR$/student/templates/student/assets/js/new-proj.js" />
@@ -203,6 +218,7 @@
         <option value="$PROJECT_DIR$/teacher/urls.py" />
         <option value="$PROJECT_DIR$/teacher/views.py" />
         <option value="$PROJECT_DIR$/Arcxival/views.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -247,6 +263,30 @@
               <item name="student" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="student" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
+              <item name="teacher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
+              <item name="teacher" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
+              <item name="teacher" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Arcxival_new" type="462c0819:PsiDirectoryNode" />
+              <item name="teacher" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="teacher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Arcxival_new" type="b2602c69:ProjectViewProjectNode" />
@@ -347,7 +387,7 @@
       <workItem from="1562485940773" duration="300000" />
       <workItem from="1562486281756" duration="6393000" />
       <workItem from="1562492724603" duration="8112000" />
-      <workItem from="1562500861324" duration="2184000" />
+      <workItem from="1562500861324" duration="2360000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed project links">
       <created>1562347491476</created>
@@ -370,11 +410,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562501635902</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed everything so far... except archive">
+      <created>1562503056341</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562503056341</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155951000" />
+    <option name="totallyTimeSpent" value="156127000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -387,6 +434,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15817694" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -402,8 +450,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32956153" />
-      <window_info anchor="bottom" id="manage.py@Arcxival" order="11" visible="true" weight="0.3128655" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.2560113" />
+      <window_info anchor="bottom" id="manage.py@Arcxival" order="11" weight="0.3128655" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.25584796" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32748538" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32894737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -444,13 +492,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Arcxival/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="9" selection-start-line="14" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -685,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/teacher_projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="78" column="33" lean-forward="true" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/teacher/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -724,7 +758,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/archive_courses.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-618" />
+        <state relative-caret-position="-465" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/teacher_projects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="78" column="33" lean-forward="true" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
       </provider>
     </entry>
   </component>
