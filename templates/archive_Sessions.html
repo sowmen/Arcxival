@@ -52,29 +52,30 @@
     <section class="section-content bg padding-y-sm" style="padding-top: 100px;height: 800px;">
 
         <div class="container">
-            <h4 style="text-align: center;padding-bottom: 20px;font-size: 50px;">
-                <a href="{% url 'archive_courses' %}">Courses</a>
-                / Sessions
-            </h4>
+
+            <h3 class="text-left"
+                style="padding-left:6px;padding-top:13px;margin-left:-5px;padding-bottom:1px;margin-bottom:9px;font-size:25px;font-family: 'Open Sans', sans-serif;">
+                <a href="{% url 'archive_courses' %}">COURSES</a>
+                / SESSIONS </h3>
+            <hr style="background-color: #0d0d0d">
+            <br>
+            <br>
             <div class="row-sm">
                 {% for session in sessions.all %}
-                <div class="col-md-3 col-sm-6">
-                    <a href="{% url 'archive_Projects' session.pk %}">
-                        <figure class="card card-product">
-                            <article class="box">
-                                <div class="b" style="font-size: 30px;text-align: center;">
-                                    <h1>
-                                        {{ session.batch }}
-                                    </h1>
-                                </div>
-                            </article> <!-- box.// -->
-                        </figure> <!-- card // -->
-                    </a>
-                </div>
+                    <div class="col-md-3 col-sm-6">
+                        <a href="{% url 'archive_Projects' session.pk %}">
+                            <figure class="card card-product">
+                                <article class="box">
+                                    <div class="b" style="font-size: 30px;text-align: center;">
+                                        <h1>
+                                            {{ session.batch }}
+                                        </h1>
+                                    </div>
+                                </article> <!-- box.// -->
+                            </figure> <!-- card // -->
+                        </a>
+                    </div>
                 {% endfor %}
-
-
-
 
 
             </div>

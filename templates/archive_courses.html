@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href={% static "css/styles.css" %}>
     <link rel="stylesheet" href={% static "css/Footer-Basic.css" %}>
 
@@ -21,14 +22,14 @@
 
     <title> Archive Courses </title>
 
-        <link rel="shortcut icon" type="image/x-icon" href="{% static "images/favicon.ico" %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static "images/favicon.ico" %}">
 
     <!-- jQuery -->
-        <script src="{% static "js/jquery-2.0.0.min.js" %}" type="text/javascript"></script>
+    <script src="{% static "js/jquery-2.0.0.min.js" %}" type="text/javascript"></script>
 
     <!-- Bootstrap4 files-->
-        <script src="{% static "js/bootstrap.bundle.min.js" %}" type="text/javascript"></script>
-        <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css"/>
+    <script src="{% static "js/bootstrap.bundle.min.js" %}" type="text/javascript"></script>
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css"/>
 
     <!-- Font awesome 5 -->
     <link href="{% static "fonts/fontawesome/css/fontawesome-all.min.css" %}" type="text/css" rel="stylesheet">
@@ -47,18 +48,18 @@
     <link href="{% static "css/responsive.css" %}" rel="stylesheet" media="only screen and (max-width: 1200px)"/>
 
     <!-- custom javascript -->
-        <script src="{% static "js/script.js" %}" type="text/javascript"></script>
+    <script src="{% static "js/script.js" %}" type="text/javascript"></script>
 
-        <script type="text/javascript">
-            /// some script
+    <script type="text/javascript">
+        /// some script
 
-            // jquery ready start
-            $(document).ready(function () {
-                // jQuery code
+        // jquery ready start
+        $(document).ready(function () {
+            // jQuery code
 
-            });
-            // jquery end
-        </script>
+        });
+        // jquery end
+    </script>
 </head>
 <body style="background-color: #F8F8F8;">
 
@@ -88,29 +89,32 @@
 <section class="section-content bg padding-y-sm" style="padding-top: 100px;">
 
     <div class="container">
-        <h4 style="text-align: center;padding-bottom: 20px;font-size: 50px;">
-            Courses
-        </h4>
+        <h3 class="text-left"
+            style="padding-left:6px;padding-top:13px;margin-left:-5px;padding-bottom:1px;margin-bottom:9px;font-size:25px;font-family: 'Open Sans', sans-serif;">
+            COURSES </h3>
+        <hr style="background-color: #0d0d0d">
+    <br>
+    <br>
+
         <div class="row-sm">
-
             {% for course in courses.all %}
-            <div class="col-md-3 col-sm-6">
-                <a href="{% url 'archive_Sessions' course.pk %}">
-                    <figure class="card card-product">
-                        <article class="box">
-                            <div class="icontext  mb-4">
-                                <div class="text-wrap">
+                <div class="col-md-3 col-sm-6">
+                    <a href="{% url 'archive_Sessions' course.pk %}">
+                        <figure class="card card-product">
+                            <article class="box">
+                                <div class="icontext  mb-4">
+                                    <div class="text-wrap">
 
-                                    <div class="b" style="font-size: 30px;">{{ course.course_code }}</div>
-                                    <small style="font-size: 16px;margin-top: 15px;margin-bottom: 15px;">{{ course.course_title }}
-                                    </small>
+                                        <div class="b" style="font-size: 30px;">{{ course.course_code }}</div>
+                                        <small style="font-size: 16px;margin-top: 15px;margin-bottom: 15px;">{{ course.course_title }}
+                                        </small>
 
-                                </div>
-                            </div> <!-- icontexpxt.// -->
-                        </article> <!-- box.// -->
-                    </figure> <!-- card // -->
-                </a>
-            </div>
+                                    </div>
+                                </div> <!-- icontexpxt.// -->
+                            </article> <!-- box.// -->
+                        </figure> <!-- card // -->
+                    </a>
+                </div>
             {% endfor %}
 
 

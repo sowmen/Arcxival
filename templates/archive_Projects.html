@@ -65,11 +65,13 @@
 {% block body %}
 
     <div class="container" style="margin-top: 100px;">
-        <h4>
-            <a href="{% url 'archive_courses' %}">Courses</a> /
-            <a href="{% url 'archive_Sessions' %}">Sessions</a> /
-            Projects
-        </h4>
+        <h4 class="text-left"
+            style="padding-left:6px;padding-top:13px;margin-left:-5px;padding-bottom:1px;margin-bottom:9px;font-size:25px;font-family: 'Open Sans', sans-serif;">
+            <a href="{% url 'archive_courses' %}">COURSES</a>
+            / <a href="{% url 'archive_Sessions' session.pk %}">SESSIONS</a> / PROJECTS </h4>
+        <hr style="background-color: #0d0d0d">
+        <br>
+        <br>
         <table id="dtHorizontalVerticalExample" class="table table-bordered table-sm " cellspacing="0" width="100%">
             <thead>
             <tr>
@@ -82,25 +84,25 @@
             </thead>
             <tbody>
             {% for x in projects %}
-            <tr data-href="{{ x.session_id }}/{{ x.project_id }}">
-                <td>{{ x.project_title }}</td>
-                <td>{{ x.group_name }}</td>
-                <td>{{ x.member1_reg }}</td>
-                <td>
-                    {% if x.member2_reg_id == '000' %}
-                    --
-                    {% else %}
-                    {{ x.member2_reg }}
-                    {% endif %}
-                </td>
-                <td>
-                    {% if x.member3_reg_id == '000' %}
-                    --
-                    {% else %}
-                    {{ x.member3_reg }}
-                    {% endif %}
-                </td>
-            </tr>
+                <tr data-href="{{ x.session_id }}/{{ x.project_id }}">
+                    <td>{{ x.project_title }}</td>
+                    <td>{{ x.group_name }}</td>
+                    <td>{{ x.member1_reg }}</td>
+                    <td>
+                        {% if x.member2_reg_id == '000' %}
+                            --
+                        {% else %}
+                            {{ x.member2_reg }}
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if x.member3_reg_id == '000' %}
+                            --
+                        {% else %}
+                            {{ x.member3_reg }}
+                        {% endif %}
+                    </td>
+                </tr>
             {% endfor %}
             </tbody>
         </table>

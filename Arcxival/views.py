@@ -40,14 +40,21 @@ def archive_courses(request):
 def archive_Sessions(request, pk):
 
     print("here",pk)
-    session_obj = session.objects.filter(course_code_id=pk);
-    print(session_obj)
-    return render(request, 'archive_Sessions.html', {'sessions':session_obj})
+    session_obj_forward = session.objects.filter(course_code_id=pk);
+    session_obj_back = session.objects.filter(pk=pk);
+    print(session_obj_forward)
+    print(session_obj_back)
+    if session_obj_forward:
+        print("piche", session_obj_forward)
+        return render(request, 'archive_Sessions.html', {'sessions':session_obj_forward})
+    else:
+        return render(request, 'archive_Sessions.html', {'sessions': session_obj_back})
 
 def archive_Projects(request,pk):
 
+    session_ob = session.objects.get(pk=pk)
     project_ob = project.objects.filter(session_id=pk)
-    return render(request, 'archive_Projects.html.', {'projects':project_ob})
+    return render(request, 'archive_Projects.html.', {'projects':project_ob, 'session': session_ob})
 
 def projectdetails(request, session_id, project_id):
     #print(project_title, session)

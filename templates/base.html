@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href={% static "css/styles.css" %}>
     <link rel="stylesheet" href={% static "css/Footer-Basic.css" %}>
 
 
-{#    <title>Arcxival</title>#}
+    {#    <title>Arcxival</title>#}
 
     {% block head %}
     {% endblock %}
@@ -26,16 +27,22 @@
 
 <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#000a12;height:70px;">
     <div class="container">
-        <a class="navbar-brand" href="#" style="color:#eeeeee; font-family: azonix; padding-bottom: 15px; font-size: 28px">
+        <a class="navbar-brand" href="#"
+           style="color:#eeeeee; font-family: azonix; padding-bottom: 15px; font-size: 28px">
             <span class="brand-text">ARC</span><span id="X">X</span><span class="brand-text">IVAL</span></a>
         <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation" style="margin-right: 650px"><a class="anim nav-link active" href="{% url 'archive_courses' %}" style="color:#eeeeee;">ARCHIVE</a></li>
-                <li class="nav-item" role="presentation"><a class="anim nav-link active" href="{% url 'logout' %}" style="color:#eeeeee;">LOGOUT</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" style="padding-top:1px;padding-left:39px;color:#eeeeee;"
-                                                            href="#" ><i class="icon ion-android-settings"></i></a></li>
+                <li class="nav-item" role="presentation" style="margin-right: 650px"><a class="anim nav-link active"
+                                                                                        href="{% url 'archive_courses' %}"
+                                                                                        style="color:#eeeeee;">ARCHIVE</a>
+                </li>
+                <li class="nav-item" role="presentation"><a class="anim nav-link active" href="{% url 'logout' %}"
+                                                            style="color:#eeeeee;">LOGOUT</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link"
+                                                            style="padding-top:1px;padding-left:39px;color:#eeeeee;"
+                                                            href="#"><i class="icon ion-android-settings"></i></a></li>
             </ul>
         </div>
     </div>
@@ -48,11 +55,14 @@
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 {% block scripts %}
