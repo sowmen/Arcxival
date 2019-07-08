@@ -3,17 +3,24 @@
 
 {% block head %}
     <style>
-
+        label {
+            font-family: 'Open Sans', sans-serif;
+        }
     </style>
 {% endblock %}
 
 {% block body %}
     <div class="container" style="margin-top: 126px;">
+        <h3 class="text-left"
+            style="padding-left:6px;padding-top:13px;margin-left:-5px;padding-bottom:1px;margin-bottom:9px;font-size:21px;">
+            CREATE NEW SESSION</h3>
+        <hr style="background-color: #0d0d0d;width: 75%;margin-left: 0px;">
+        <br><br>
         <form action="{% url 'thome' %}" method="POST">
             {% csrf_token %}
             <div class="form-group form-inline">
                 <label class="d-block"
-                       style="font-size:18px;font-family:Actor, sans-serif;width:133px;padding-left:6px;"
+                       style="font-size:18px;width:133px;padding-left:6px;"
                        for="course-code-list">Course Code :&nbsp;</label>
                 <select class="form-control" id="course-code-list"
                         style="padding-right:12px;padding-top:6px;padding-left:3px;width:326px;"
@@ -25,25 +32,27 @@
                     {% endfor %}
                 </select>
                 <button class="btn btn-info text-left" data-toggle="modal" data-target="#modal1"
-                        style="margin-left:4px" type="button">Create Course
+                        style="margin-left:15px" type="button">Create Course
                 </button>
             </div>
             <div class="form-group form-inline">
                 <label class="d-block" id="batch-label"
-                       style="font-size:18px;font-family:Actor, sans-serif;width:133px;padding-left:6px;"
+                       style="font-size:18px;width:133px;padding-left:6px;"
                        for="batch-list">Batch :</label>
                 <input class="form-control" type="text" id="batch" name="batch"
                        style="width: 326px;padding-left: 8px;text-align: left;" required>
             </div>
             <div class="form-group form-inline">
                 <label class="d-block"
-                       style="font-size:18px;font-family:Actor, sans-serif;width:133px;padding-left:6px;"
+                       style="font-size:18px;width:133px;padding-left:6px;"
                        for="start-date">Start Date :</label>
-                <input class="form-control" id="start-date" name="start-date" type="date" style="text-align: left;" required>
+                <input class="form-control" id="start-date" name="start-date" type="date" style="text-align: left;"
+                       required>
             </div>
             <div class="col-sm-11 col-md-8 col-lg-6 col-xl-5 align-self-end text-left"
                  style="margin-top:38px;padding-left:0px;padding-right:0px;height:38px;">
-                <button class="btn btn-success float-right" type="submit">Submit</button>
+                <button type="submit" class="btn btn-mdb-color float-right">SUBMIT</button>
+                {#                <button class="btn btn-success float-right" type="submit">Submit</button>#}
             </div>
         </form>
     </div>
@@ -51,7 +60,10 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Create New Course</h4>
+                    <h3 class="text-left" class="modal-title"
+                        style="padding-left:6px;padding-top:13px;margin-left:-5px;padding-bottom:1px;margin-bottom:9px;font-size:18px;">
+                        CREATE NEW COURSE</h3>
+                    {#        <hr style="background-color: #0d0d0d;width: 100%;margin-left: 0px;">#}
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -59,29 +71,32 @@
                         {% csrf_token %}
                         <div class="form-group form-inline">
                             <label class="d-block"
-                                   style="font-size:18px;font-family:Actor, sans-serif;width:133px;padding-left:6px;"
+                                   style="font-size:18px;width:133px;padding-left:6px;"
                                    for="course-code">Course Code :&nbsp;</label>
                             <input class="form-control form-control-sm" type="text" id="course-code" required
-                                   name="course-code" placeholder="Example : CSE150" style="text-align: left;">
+                                   name="course-code" placeholder="Example : CSE150" style="text-align: left;width: 70%">
                         </div>
                         <div class="form-group form-inline">
                             <label class="d-block"
-                                   style="font-size:18px;font-family:Actor, sans-serif;width:133px;padding-left:6px;"
+                                   style="font-size:18px;width:133px;padding-left:6px;"
                                    for="course-title">Course Title:&nbsp;</label>
                             <input class="form-control form-control-sm" type="text" id="course-title"
-                                   name="course-title" required>
+                                   name="course-title" style="width: 70%;text-align: left;" required>
                         </div>
                         <div class="form-group form-inline">
                             <label class="d-block"
-                                   style="font-size:18px;font-family:Actor, sans-serif;width:133px;padding-left:6px;"
-                                   for="credit-input" >Credit Hours :</label>
-                            <input class="form-control form-control-sm" required
+                                   style="font-size:18px;width:133px;padding-left:6px;"
+                                   for="credit-input">Credit Hours :</label>
+                            <input class="form-control form-control-sm" required style="width: 70%; text-align: left;"
                                    type="text" id="credit-input" name="credit-input" inputmode="numeric">
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-light" data-dismiss="modal" type="button">Close</button>
+                    <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                    <p></p>
+                    <p></p>
+                    <p></p>
                     <button class="btn btn-primary" form="create-course" type="submit">Save</button>
                 </div>
             </div>

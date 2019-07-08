@@ -15,5 +15,9 @@
       <user-name>root</user-name>
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
+    <data-source name="Django default2" uuid="55bdfe2c-05b3-4be7-b23e-1fd82998b143">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <user-name>root</user-name>
+    </data-source>
   </component>
 </project>

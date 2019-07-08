@@ -33,28 +33,35 @@ def logout_view(request):
     return redirect('/')
 
 def archive_courses(request):
-    courses = course.objects
-    print(courses)
-    return render(request, 'archive_courses.html', {'courses': courses})
+    if request.user.is_authenticated:
+        courses = course.objects
+        print(courses)
+        return render(request, 'archive_courses.html', {'courses': courses})
+    else:
+        return redirect('/')
 
 def archive_Sessions(request, pk):
-
-    print("here",pk)
-    session_obj_forward = session.objects.filter(course_code_id=pk);
-    session_obj_back = session.objects.filter(pk=pk);
-    print(session_obj_forward)
-    print(session_obj_back)
-    if session_obj_forward:
-        print("piche", session_obj_forward)
-        return render(request, 'archive_Sessions.html', {'sessions':session_obj_forward})
+    if request.user.is_authenticated:
+        print("here",pk)
+        session_obj_forward = session.objects.filter(course_code_id=pk);
+        session_obj_back = session.objects.filter(pk=pk);
+        print(session_obj_forward)
+        print(session_obj_back)
+        if session_obj_forward:
+            print("piche", session_obj_forward)
+            return render(request, 'archive_Sessions.html', {'sessions':session_obj_forward})
+        else:
+            return render(request, 'archive_Sessions.html', {'sessions': session_obj_back})
     else:
-        return render(request, 'archive_Sessions.html', {'sessions': session_obj_back})
+        return redirect('/')
 
 def archive_Projects(request,pk):
-
-    session_ob = session.objects.get(pk=pk)
-    project_ob = project.objects.filter(session_id=pk)
-    return render(request, 'archive_Projects.html.', {'projects':project_ob, 'session': session_ob})
+    if request.user.is_authenticated:
+        session_ob = session.objects.get(pk=pk)
+        project_ob = project.objects.filter(session_id=pk)
+        return render(request, 'archive_Projects.html.', {'projects':project_ob, 'session': session_ob})
+    else:
+        return redirect('/')
 
 def projectdetails(request, session_id, project_id):
     #print(project_title, session)
