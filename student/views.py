@@ -6,6 +6,8 @@ from .models import student, project, file
 from customuser.models import  user_type
 from django.core.files.storage import FileSystemStorage
 from .forms import fileform
+import os
+from django.conf import settings
 # Create your views here.
 
 
@@ -77,31 +79,47 @@ def newproject(request):
             return redirect('thome')
 
 def projectdetails(request, project_id):
-    #print(project_title, session)
     if request.user.is_authenticated:
         if request.method == 'POST':
-            for uploaded_file in request.FILES.getlist('file'):
-                #uploaded_file = request.FILES['file']
-                # fs = FileSystemStorage()
-                # fs.save(uploaded_file.name, uploaded_file)
-                size = uploaded_file.size
+            if request.POST.get('delete') is not None:
+                path = request.POST.get('delete')
+                print(path)
+                full_path = os.path.join(settings.MEDIA_ROOT,path)
+                full_path = full_path.replace("/","\\")
+                print(full_path)
+                try:
+                    os.remove(full_path)
+                except FileNotFoundError:
+                    return redirect(request.path_info)
 
-                ext=""
-                if size < 512000:
-                    size = size / 1024.0
-                    ext = 'Kb'
-                elif size < 4194304000:
-                    size = size / 1048576.0
-                    ext = 'Mb'
-                else:
-                    size = size / 1073741824.0
-                    ext = 'Gb'
-                value = '%.2f' % size
-                value = value + ext
-                # print(value)
-                project_ob = project.objects.get(project_id=request.POST.get("project_id"))
-                file_obj = file(file_name=uploaded_file.name, project_id=project_ob, file_content=uploaded_file, file_size=value)
-                file_obj.save()
+                fileob = file.objects.get(file_content=request.POST.get('delete'))
+
+                fileob.delete()
+
+
+            else:
+                for uploaded_file in request.FILES.getlist('file'):
+                    #uploaded_file = request.FILES['file']
+                    # fs = FileSystemStorage()
+                    # fs.save(uploaded_file.name, uploaded_file)
+                    size = uploaded_file.size
+
+                    ext=""
+                    if size < 512000:
+                        size = size / 1024.0
+                        ext = 'Kb'
+                    elif size < 4194304000:
+                        size = size / 1048576.0
+                        ext = 'Mb'
+                    else:
+                        size = size / 1073741824.0
+                        ext = 'Gb'
+                    value = '%.2f' % size
+                    value = value + ext
+                    # print(value)
+                    project_ob = project.objects.get(project_id=request.POST.get("project_id"))
+                    file_obj = file(file_name=uploaded_file.name, project_id=project_ob, file_content=uploaded_file, file_size=value)
+                    file_obj.save()
 
         files = file.objects
         project_obj = get_object_or_404(project, pk=project_id)
@@ -110,8 +128,13 @@ def projectdetails(request, project_id):
         return redirect('/')
 
 
-# def delete_file(request, pk):
-#     if request.method == 'POST':
-#         file_obj = file.objects.get(file, pk = pk)
-#         file_obj.delete()
-#     return redirect('upload_original.html')
+# def delete_file(self, *args, **kwargs):
+#     print(self)
+#     self.file_content.url.delete()
+#     super.delete(*args, **kwargs)
+
+def delete_file(request, pk):
+    if(request.method == "POST"):
+        file_obj=file.objects.get(file_content=pk)
+        file_obj.delete()
+    return redirect('upload.html')

@@ -134,7 +134,8 @@
                             <tr>
                                 <th>Filename</th>
                                 <th>File Size</th>
-                                <th>Download</th>
+                                <th width="110px">Download</th>
+                                <th width="110px">Delete</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -148,6 +149,12 @@
                                                style="width:125px;padding-left: 18px; padding-right: 25px;"
                                                role="button"
                                                aria-pressed="true">Download</a>
+                                        </td>
+                                        <td>
+                                            <form method="post" action="">
+                                                {% csrf_token %}
+                                                <button type="submit" value="{{ file.file_content }}" class="btn btn-danger btn-sm my-0 active" style="width:125px;padding-left: 18px; padding-right: 25px; margin-left: 0px;"  aria-pressed="true" name="delete">Delete</button>
+                                            </form>
                                         </td>
 
                                     </tr>

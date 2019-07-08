@@ -47,3 +47,4 @@ class file(models.Model):
 
     def __str__(self):
         return "(" + self.project_id.project_id + ")" + self.file_name
+

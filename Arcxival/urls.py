@@ -29,6 +29,7 @@ urlpatterns = [
     # path('accounts/signup/teacher/', views.signup_teacher, name='signup_teacher'),
     path('teacherhome/', include('teacher.urls'), name='thome'),
     path('studenthome/', include('student.urls'), name='shome'),
+    #path('<int:pk>/', views.delete_file, name = "delete_file"),
     path('logout/', views.logout_view, name='logout'),
     path('archive_Courses/', views.archive_courses, name='archive_courses'),
     path('archive_Sessions/<str:pk>', views.archive_Sessions, name='archive_Sessions'),

@@ -96,3 +96,8 @@ def projectdetails(request, session_id, project_id):
     else:
         print("TEACHER BA STUDENT NA")
         return HttpResponse(request, '<h1>TEACHER BA STUDENT NA</h1>')
+
+def delete_file(self, *args, **kwargs):
+    print(self)
+    self.file_content.delete()
+    super.delete(*args, **kwargs)
