@@ -64,15 +64,28 @@ def projectdetails(request, session_id, project_id):
                 #uploaded_file = request.FILES['file']
                 # fs = FileSystemStorage()
                 # fs.save(uploaded_file.name, uploaded_file)
-
+                ext = ""
+                if size < 512000:
+                    size = size / 1024.0
+                    ext = 'Kb'
+                elif size < 4194304000:
+                    size = size / 1048576.0
+                    ext = 'Mb'
+                else:
+                    size = size / 1073741824.0
+                    ext = 'Gb'
+                value = '%.2f' % size
+                value = value + ext
+                # print(value)
                 project_ob = project.objects.get(project_id=request.POST.get("project_id"))
-                file_obj = file(file_name=uploaded_file.name, project_id=project_ob, file_content=uploaded_file)
+                file_obj = file(file_name=uploaded_file.name, project_id=project_ob, file_content=uploaded_file,
+                                file_size=value)
                 file_obj.save()
 
         print("there", project_id)
         files = file.objects
         project_obj = get_object_or_404(project, pk=project_id)
-        return render(request, 'upload.html', {'project_obj':project_obj,'files':files})
+        return render(request, 'upload.html', {'project_obj':project_obj, 'files':files})
     else:
         print("TEACHER BA STUDENT NA")
         return HttpResponse(request, '<h1>TEACHER BA STUDENT NA</h1>')

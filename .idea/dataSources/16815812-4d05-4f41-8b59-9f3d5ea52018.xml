@@ -1853,306 +1853,312 @@ model</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="440" parent="343" name="file_content">
+    <column id="440" parent="343" name="file_size">
       <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="441" parent="343" name="file_content">
+      <Position>4</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="441" parent="343" name="project_id_id">
-      <Position>4</Position>
+    <column id="442" parent="343" name="project_id_id">
+      <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="442" parent="343" name="student_file_project_id_id_6dcf2870_fk_student_p">
+    <index id="443" parent="343" name="student_file_project_id_id_6dcf2870_fk_student_p">
       <ColNames>project_id_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="443" parent="343" name="PRIMARY">
+    <key id="444" parent="343" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="444" parent="343" name="student_file_project_id_id_6dcf2870_fk_student_p">
+    <foreign-key id="445" parent="343" name="student_file_project_id_id_6dcf2870_fk_student_p">
       <ColNames>project_id_id</ColNames>
       <RefSchemaName>arcxival</RefSchemaName>
       <RefTableName>student_project</RefTableName>
       <RefColNames>project_id</RefColNames>
     </foreign-key>
-    <column id="445" parent="344" name="project_title">
+    <column id="446" parent="344" name="project_title">
       <Position>1</Position>
       <DataType>varchar(300)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="446" parent="344" name="project_id">
+    <column id="447" parent="344" name="project_id">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="447" parent="344" name="group_name">
+    <column id="448" parent="344" name="group_name">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="448" parent="344" name="course_code_id">
+    <column id="449" parent="344" name="course_code_id">
       <Position>4</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="449" parent="344" name="member1_reg_id">
+    <column id="450" parent="344" name="member1_reg_id">
       <Position>5</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="450" parent="344" name="member2_reg_id">
+    <column id="451" parent="344" name="member2_reg_id">
       <Position>6</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="451" parent="344" name="member3_reg_id">
+    <column id="452" parent="344" name="member3_reg_id">
       <Position>7</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="452" parent="344" name="session_id">
+    <column id="453" parent="344" name="session_id">
       <Position>8</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="453" parent="344" name="student_project_course_code_id_b224a17b_fk_teacher_c">
+    <index id="454" parent="344" name="student_project_course_code_id_b224a17b_fk_teacher_c">
       <ColNames>course_code_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="454" parent="344" name="student_project_member1_reg_id_5a2623b0_fk_student_s">
+    <index id="455" parent="344" name="student_project_member1_reg_id_5a2623b0_fk_student_s">
       <ColNames>member1_reg_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="455" parent="344" name="student_project_member2_reg_id_013b1854_fk_student_s">
+    <index id="456" parent="344" name="student_project_member2_reg_id_013b1854_fk_student_s">
       <ColNames>member2_reg_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="456" parent="344" name="student_project_member3_reg_id_c0b4831c_fk_student_s">
+    <index id="457" parent="344" name="student_project_member3_reg_id_c0b4831c_fk_student_s">
       <ColNames>member3_reg_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="457" parent="344" name="student_project_session_id_e847409f_fk_teacher_s">
+    <index id="458" parent="344" name="student_project_session_id_e847409f_fk_teacher_s">
       <ColNames>session_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="458" parent="344" name="PRIMARY">
+    <key id="459" parent="344" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>project_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="459" parent="344" name="student_project_course_code_id_b224a17b_fk_teacher_c">
+    <foreign-key id="460" parent="344" name="student_project_course_code_id_b224a17b_fk_teacher_c">
       <ColNames>course_code_id</ColNames>
       <RefSchemaName>arcxival</RefSchemaName>
       <RefTableName>teacher_course</RefTableName>
       <RefColNames>course_code</RefColNames>
     </foreign-key>
-    <foreign-key id="460" parent="344" name="student_project_member1_reg_id_5a2623b0_fk_student_s">
+    <foreign-key id="461" parent="344" name="student_project_member1_reg_id_5a2623b0_fk_student_s">
       <ColNames>member1_reg_id</ColNames>
       <RefSchemaName>arcxival</RefSchemaName>
       <RefTableName>student_student</RefTableName>
       <RefColNames>reg_number</RefColNames>
     </foreign-key>
-    <foreign-key id="461" parent="344" name="student_project_member2_reg_id_013b1854_fk_student_s">
+    <foreign-key id="462" parent="344" name="student_project_member2_reg_id_013b1854_fk_student_s">
       <ColNames>member2_reg_id</ColNames>
       <RefSchemaName>arcxival</RefSchemaName>
       <RefTableName>student_student</RefTableName>
       <RefColNames>reg_number</RefColNames>
     </foreign-key>
-    <foreign-key id="462" parent="344" name="student_project_member3_reg_id_c0b4831c_fk_student_s">
+    <foreign-key id="463" parent="344" name="student_project_member3_reg_id_c0b4831c_fk_student_s">
       <ColNames>member3_reg_id</ColNames>
       <RefSchemaName>arcxival</RefSchemaName>
       <RefTableName>student_student</RefTableName>
       <RefColNames>reg_number</RefColNames>
     </foreign-key>
-    <foreign-key id="463" parent="344" name="student_project_session_id_e847409f_fk_teacher_s">
+    <foreign-key id="464" parent="344" name="student_project_session_id_e847409f_fk_teacher_s">
       <ColNames>session_id</ColNames>
       <RefSchemaName>arcxival</RefSchemaName>
       <RefTableName>teacher_session</RefTableName>
       <RefColNames>session_id</RefColNames>
     </foreign-key>
-    <column id="464" parent="345" name="reg_number">
+    <column id="465" parent="345" name="reg_number">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="465" parent="345" name="name">
+    <column id="466" parent="345" name="name">
       <Position>2</Position>
       <DataType>varchar(250)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="466" parent="345" name="email_id">
+    <column id="467" parent="345" name="email_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="467" parent="345" name="email_id">
+    <index id="468" parent="345" name="email_id">
       <ColNames>email_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="468" parent="345" name="PRIMARY">
+    <key id="469" parent="345" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>reg_number</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="469" parent="345" name="email_id">
+    <key id="470" parent="345" name="email_id">
       <ColNames>email_id</ColNames>
       <UnderlyingIndexName>email_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="470" parent="345" name="student_student_email_id_24a33888_fk_customuser_user_id">
+    <foreign-key id="471" parent="345" name="student_student_email_id_24a33888_fk_customuser_user_id">
       <ColNames>email_id</ColNames>
       <RefSchemaName>arcxival</RefSchemaName>
       <RefTableName>customuser_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="471" parent="346" name="course_code">
+    <column id="472" parent="346" name="course_code">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="472" parent="346" name="course_title">
+    <column id="473" parent="346" name="course_title">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="473" parent="346" name="course_credit">
+    <column id="474" parent="346" name="course_credit">
       <Position>3</Position>
       <DataType>double|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="474" parent="346" name="teacher_code_id">
+    <column id="475" parent="346" name="teacher_code_id">
       <Position>4</Position>
       <DataType>varchar(5)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="475" parent="346" name="teacher_course_teacher_code_id_2d0006e8_fk_teacher_t">
+    <index id="476" parent="346" name="teacher_course_teacher_code_id_2d0006e8_fk_teacher_t">
       <ColNames>teacher_code_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="476" parent="346" name="PRIMARY">
+    <key id="477" parent="346" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>course_code</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="477" parent="346" name="teacher_course_teacher_code_id_2d0006e8_fk_teacher_t">
+    <foreign-key id="478" parent="346" name="teacher_course_teacher_code_id_2d0006e8_fk_teacher_t">
       <ColNames>teacher_code_id</ColNames>
       <RefSchemaName>arcxival</RefSchemaName>
       <RefTableName>teacher_teacher</RefTableName>
       <RefColNames>teacher_code</RefColNames>
     </foreign-key>
-    <column id="478" parent="347" name="batch">
+    <column id="479" parent="347" name="batch">
       <Position>1</Position>
       <DataType>varchar(4)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="479" parent="347" name="session_id">
+    <column id="480" parent="347" name="session_id">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="480" parent="347" name="date">
+    <column id="481" parent="347" name="date">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="481" parent="347" name="running">
+    <column id="482" parent="347" name="running">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="482" parent="347" name="course_code_id">
+    <column id="483" parent="347" name="course_code_id">
       <Position>5</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="483" parent="347" name="teacher_code_id">
+    <column id="484" parent="347" name="teacher_code_id">
       <Position>6</Position>
       <DataType>varchar(5)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="484" parent="347" name="teacher_session_course_code_id_0cf01485_fk_teacher_c">
+    <index id="485" parent="347" name="teacher_session_course_code_id_0cf01485_fk_teacher_c">
       <ColNames>course_code_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="485" parent="347" name="teacher_session_teacher_code_id_54ab7de0_fk_teacher_t">
+    <index id="486" parent="347" name="teacher_session_teacher_code_id_54ab7de0_fk_teacher_t">
       <ColNames>teacher_code_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="486" parent="347" name="PRIMARY">
+    <key id="487" parent="347" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>session_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="487" parent="347" name="teacher_session_course_code_id_0cf01485_fk_teacher_c">
+    <foreign-key id="488" parent="347" name="teacher_session_course_code_id_0cf01485_fk_teacher_c">
       <ColNames>course_code_id</ColNames>
       <RefSchemaName>arcxival</RefSchemaName>
       <RefTableName>teacher_course</RefTableName>
       <RefColNames>course_code</RefColNames>
     </foreign-key>
-    <foreign-key id="488" parent="347" name="teacher_session_teacher_code_id_54ab7de0_fk_teacher_t">
+    <foreign-key id="489" parent="347" name="teacher_session_teacher_code_id_54ab7de0_fk_teacher_t">
       <ColNames>teacher_code_id</ColNames>
       <RefSchemaName>arcxival</RefSchemaName>
       <RefTableName>teacher_teacher</RefTableName>
       <RefColNames>teacher_code</RefColNames>
     </foreign-key>
-    <column id="489" parent="348" name="name">
+    <column id="490" parent="348" name="name">
       <Position>1</Position>
       <DataType>varchar(250)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="490" parent="348" name="teacher_code">
+    <column id="491" parent="348" name="teacher_code">
       <Position>2</Position>
       <DataType>varchar(5)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="491" parent="348" name="email_id">
+    <column id="492" parent="348" name="email_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="492" parent="348" name="email_id">
+    <index id="493" parent="348" name="email_id">
       <ColNames>email_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="493" parent="348" name="PRIMARY">
+    <key id="494" parent="348" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>teacher_code</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="494" parent="348" name="email_id">
+    <key id="495" parent="348" name="email_id">
       <ColNames>email_id</ColNames>
       <UnderlyingIndexName>email_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="495" parent="348" name="teacher_teacher_email_id_0dbdb6a4_fk_customuser_user_id">
+    <foreign-key id="496" parent="348" name="teacher_teacher_email_id_0dbdb6a4_fk_customuser_user_id">
       <ColNames>email_id</ColNames>
       <RefSchemaName>arcxival</RefSchemaName>
       <RefTableName>customuser_user</RefTableName>

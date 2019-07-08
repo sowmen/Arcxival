@@ -9,7 +9,7 @@
 <body>
 <h1>Upload Page Arcxival</h1>
 
-<form method="POST" enctype="multipart/form-data">
+<form method="POST" enctype="multipart/form-data" action="{% url 'projectdetails' project_obj.project_id %}">
     {% csrf_token %}
     <input type="file", name="file" multiple />
     <input type="hidden" value = "{{ project_obj.project_id }}" name = "project_id">

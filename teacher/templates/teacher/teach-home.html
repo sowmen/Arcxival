@@ -27,6 +27,7 @@
     <!-- MDBootstrap Datatables  -->
     <link href="{% static "cssp/addons/datatables.min.css" %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
     <style media="screen">
         .dtHorizontalVerticalExampleWrapper {
             max-width: 750px;
@@ -78,10 +79,12 @@
 {% block body %}
 
 
-    <div style="height:400px;margin-top:84px;">
+    <div style="margin-top:84px;">
+    <div class="row">
+
         <div class="container">
-            <div class="row" style="padding:0px;padding-top:22px;height:300px;">
-                <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-9" style="height:378px;">
+            <div class="row" style="padding:0px;padding-top:22px;height:50%;">
+                <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-9" style="height: 50%;">
                     <div class="row">
                         <div class="col">
                             <h3 class="text-left"
@@ -127,14 +130,17 @@
             </div>
         </div>
 
+    </div>
+    <div class="row">
+
         <div class="container">
-            <div class="row" style="padding-top:150px;">
-                <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-9" style="height:378px;">
+            <div class="row" style="">
+                <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-9" style="height:50%;">
 
                     <h3 class="text-left"
-                                style="padding-left:6px;padding-top:13px;margin-left:-5px;padding-bottom:1px;margin-bottom:9px;font-size:21px;font-family: 'Ubuntu', sans-serif;">
-                                PREVIOUS SESSIONS</h3>
-                            <hr style="background-color: #0d0d0d">
+                        style="padding-left:6px;padding-top:13px;margin-left:-5px;padding-bottom:1px;margin-bottom:9px;font-size:21px;font-family: 'Ubuntu', sans-serif;">
+                        PREVIOUS SESSIONS</h3>
+                    <hr style="background-color: #0d0d0d">
                     <div class="row">
                         <div class="col" style="padding-top:16px;">
                             <table class="table table-bordered table-sm dtHorizontalVerticalExample"
@@ -163,6 +169,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 {% endblock %}
 

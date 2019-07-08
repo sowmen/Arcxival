@@ -39,7 +39,7 @@ class project(models.Model):
 class file(models.Model):
     file_name=models.CharField(max_length=100)
     project_id=models.ForeignKey(project, on_delete=models.CASCADE)
-
+    file_size=models.CharField(max_length=255)
     def get_file_path(self, filename):
         return os.path.join(self.project_id.course_code.course_code, self.project_id.project_id, filename)
 

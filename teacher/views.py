@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from teacher.models import course, session, teacher
 from student.models import project, file
@@ -16,9 +17,9 @@ def thome(request):
             date = request.POST.get('start-date')
             t_code = teacher.objects.get(email=request.user)
             print(t_code.teacher_code)
-
-            sn = session(course_code=course_code, batch=batch, session_id=session_id, date=date, teacher_code=t_code)
-            sn.save()
+            if course_code and batch and session_id and date and t_code:
+                sn = session(course_code=course_code, batch=batch, session_id=session_id, date=date, teacher_code=t_code)
+                sn.save()
 
             with open("file.json", "w") as out:
                 json_serializer = serializers.get_serializer('json')()
@@ -46,8 +47,10 @@ def createsession(request):
             course_title = request.POST.get('course-title')
             credit = request.POST.get('credit-input')
             t_code = teacher.objects.get(email=request.user)
-            c = course(course_code=course_code, course_title=course_title, course_credit=credit, teacher_code=t_code)
-            c.save()
+            if course_code and course_title and credit:
+                c = course(course_code=course_code, course_title=course_title, course_credit=credit, teacher_code=t_code)
+                c.save()
+
 
         course_obj = course.objects
         return render(request, 'teacher/create-session.html', {'courses':course_obj})
@@ -75,13 +78,27 @@ def projectdetails(request, session_id, project_id):
                 # fs = FileSystemStorage()
                 # fs.save(uploaded_file.name, uploaded_file)
 
+                ext = ""
+                if size < 512000:
+                    size = size / 1024.0
+                    ext = 'Kb'
+                elif size < 4194304000:
+                    size = size / 1048576.0
+                    ext = 'Mb'
+                else:
+                    size = size / 1073741824.0
+                    ext = 'Gb'
+                value = '%.2f' % size
+                value = value + ext
+                # print(value)
                 project_ob = project.objects.get(project_id=request.POST.get("project_id"))
-                file_obj = file(file_name=uploaded_file.name, project_id=project_ob, file_content=uploaded_file)
+                file_obj = file(file_name=uploaded_file.name, project_id=project_ob, file_content=uploaded_file,
+                                file_size=value)
                 file_obj.save()
 
         files = file.objects
         project_obj = get_object_or_404(project, pk=project_id)
-        return render(request, 'upload.html', {'project_obj':project_obj,'files':files})
+        return render(request, 'upload.html', {'project_obj':project_obj, 'files':files})
     else:
         print("TEACHER BA STUDENT NA")
         return HttpResponse(request, '<h1>TEACHER BA STUDENT NA</h1>')
