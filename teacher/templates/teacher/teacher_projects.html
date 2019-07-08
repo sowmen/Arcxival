@@ -65,10 +65,24 @@
 {% block body %}
 
     <div class="container" style="margin-top: 100px;">
-        <h4>
-            Projects for {{ session.course_code }}
-        </h4>
+
+        <form action="{% url 'thome' %}" method="POST">
+            {% csrf_token %}
+            <div>
+                <h4 style="display: inline-block; ">
+                    Projects for {{ session.course_code }} - {{ session.batch }}
+                </h4>
+                {% if session.running %}
+                <button name="end_session" class="btn btn-danger" style="float: right;margin-top: -10px;">
+                    END SESSION
+                </button>
+                {% endif %}
+            </div>
+            <input type="hidden" name="session" value="{{ session.session_id }}">
+        </form>
         <hr style="background-color: #0d0d0d">
+
+
         <br>
         <table id="dtHorizontalVerticalExample" class="table table-bordered table-sm " cellspacing="0" width="100%">
             <thead>
@@ -82,25 +96,25 @@
             </thead>
             <tbody>
             {% for x in projects %}
-            <tr data-href="{{ x.project_id}}">
-                <td>{{ x.project_title }}</td>
-                <td>{{ x.group_name }}</td>
-                <td>{{ x.member1_reg }}</td>
-                <td>
-                    {% if x.member2_reg_id == '000' %}
-                    --
-                    {% else %}
-                    {{ x.member2_reg }}
-                    {% endif %}
-                </td>
-                <td>
-                    {% if x.member3_reg_id == '000' %}
-                    --
-                    {% else %}
-                    {{ x.member3_reg }}
-                    {% endif %}
-                </td>
-            </tr>
+                <tr data-href="{{ x.project_id }}">
+                    <td>{{ x.project_title }}</td>
+                    <td>{{ x.group_name }}</td>
+                    <td>{{ x.member1_reg }}</td>
+                    <td>
+                        {% if x.member2_reg_id == '000' %}
+                            --
+                        {% else %}
+                            {{ x.member2_reg }}
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if x.member3_reg_id == '000' %}
+                            --
+                        {% else %}
+                            {{ x.member3_reg }}
+                        {% endif %}
+                    </td>
+                </tr>
             {% endfor %}
             </tbody>
         </table>

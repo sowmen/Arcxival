@@ -11,19 +11,23 @@ from customuser.models import user_type
 def thome(request):
     if request.user.is_authenticated and user_type.objects.get(user=request.user).is_teach:
         if(request.method == 'POST'):
-            course_code = course.objects.get(course_code=request.POST.get('course-code-list'))
-            batch = request.POST.get('batch')
-            session_id = course_code.course_code + batch
-            date = request.POST.get('start-date')
-            t_code = teacher.objects.get(email=request.user)
-            print(t_code.teacher_code)
-            if course_code and batch and session_id and date and t_code:
-                sn = session(course_code=course_code, batch=batch, session_id=session_id, date=date, teacher_code=t_code)
-                sn.save()
-
-            with open("file.json", "w") as out:
-                json_serializer = serializers.get_serializer('json')()
-                json_serializer.serialize(session.objects.all(), stream=out)
+            if request.POST.get('end_session') is not None:
+                ssn = request.POST.get('session')
+                ob = session.objects.get(session_id=ssn)
+                ob.running = False
+                ob.save()
+                print(session.objects.get(session_id=ssn).running)
+                # session.objects.get().running = False
+            else:
+                course_code = course.objects.get(course_code=request.POST.get('course-code-list'))
+                batch = request.POST.get('batch')
+                session_id = course_code.course_code + batch
+                date = request.POST.get('start-date')
+                t_code = teacher.objects.get(email=request.user)
+                print(t_code.teacher_code)
+                if course_code and batch and session_id and date and t_code:
+                    sn = session(course_code=course_code, batch=batch, session_id=session_id, date=date, teacher_code=t_code)
+                    sn.save()
 
         teacher_id = teacher.objects.get(email=request.user)
         print(teacher_id.teacher_code)
