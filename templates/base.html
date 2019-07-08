@@ -31,7 +31,7 @@
 </head>
 <body style="background-color: #F8F8F8;">
 
-<nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#000a12;height:70px;">
+<nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#223272;height:70px;">
     <div class="container">
         <a class="navbar-brand" href="#"
            style="color:#eeeeee; font-family: azonix; padding-bottom: 15px; font-size: 28px">
@@ -44,11 +44,16 @@
                                                                                         href="{% url 'archive_courses' %}"
                                                                                         style="color:#eeeeee;">ARCHIVE</a>
                 </li>
-                <li class="nav-item" role="presentation"><a class="anim nav-link active" href="{% url 'logout' %}"
+                {% if user.is_authenticated %}
+                    <li class="nav-item" role="presentation"><a class="anim nav-link active" href="{% url 'logout' %}"
                                                             style="color:#eeeeee;">LOGOUT</a></li>
-{#                <li class="nav-item" role="presentation"><a class="nav-link"#}
-{#                                                            style="padding-top:1px;padding-left:39px;color:#eeeeee;"#}
-{#                                                            href="#"><i class="icon ion-android-settings"></i></a></li>#}
+                {% else %}
+                    <li class="nav-item" role="presentation"><a class="anim nav-link active" href="{% url 'home' %}"
+                                                            style="color:#eeeeee;">LOGIN</a></li>
+                {% endif %}
+                {#                <li class="nav-item" role="presentation"><a class="nav-link"#}
+                {#                                                            style="padding-top:1px;padding-left:39px;color:#eeeeee;"#}
+                {#                                                            href="#"><i class="icon ion-android-settings"></i></a></li>#}
             </ul>
         </div>
     </div>

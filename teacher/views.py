@@ -10,7 +10,7 @@ from customuser.models import user_type
 
 def thome(request):
     if request.user.is_authenticated and user_type.objects.get(user=request.user).is_teach:
-        if(request.method == 'POST'):
+        if (request.method == 'POST'):
             if request.POST.get('end_session') is not None:
                 ssn = request.POST.get('session')
                 ob = session.objects.get(session_id=ssn)
@@ -26,7 +26,8 @@ def thome(request):
                 t_code = teacher.objects.get(email=request.user)
                 print(t_code.teacher_code)
                 if course_code and batch and session_id and date and t_code:
-                    sn = session(course_code=course_code, batch=batch, session_id=session_id, date=date, teacher_code=t_code)
+                    sn = session(course_code=course_code, batch=batch, session_id=session_id, date=date,
+                                 teacher_code=t_code)
                     sn.save()
 
         teacher_id = teacher.objects.get(email=request.user)
@@ -36,45 +37,50 @@ def thome(request):
 
         for x in sessions_obj:
             tit = course.objects.get(course_code=x.course_code.course_code).course_title
-            data.append({'session':x,'title':tit})
+            data.append({'session': x, 'title': tit})
         print(data)
 
-        return render(request, 'teacher/teach-home.html', {'data':data})
+        return render(request, 'teacher/teach-home.html', {'data': data})
+    elif request.user.is_authenticated and user_type.objects.get(user=request.user).is_student:
+        return redirect('shome')
     else:
-        if request.user.is_authenticated and user_type.objects.get(user=request.user).is_student:
-            return redirect('shome')
+        return redirect('home')
+
 
 def createsession(request):
     if request.user.is_authenticated and user_type.objects.get(user=request.user).is_teach:
-        if(request.method == 'POST'):
+        if (request.method == 'POST'):
             course_code = request.POST.get('course-code')
             course_title = request.POST.get('course-title')
             credit = request.POST.get('credit-input')
             t_code = teacher.objects.get(email=request.user)
             if course_code and course_title and credit:
-                c = course(course_code=course_code, course_title=course_title, course_credit=credit, teacher_code=t_code)
+                c = course(course_code=course_code, course_title=course_title, course_credit=credit,
+                           teacher_code=t_code)
                 c.save()
 
-
         course_obj = course.objects
-        return render(request, 'teacher/create-session.html', {'courses':course_obj})
+        return render(request, 'teacher/create-session.html', {'courses': course_obj})
     else:
         if request.user.is_authenticated and user_type.objects.get(user=request.user).is_student:
             return redirect('shome')
+
 
 def batchinfo(request, session_id):
     if request.user.is_authenticated and user_type.objects.get(user=request.user).is_teach:
         session_obj = get_object_or_404(session, pk=session_id)
         print(session_obj.session_id)
-        project_objs = project.objects.raw("select * from student_project where session_id LIKE %s",[session_obj.session_id])
+        project_objs = project.objects.raw("select * from student_project where session_id LIKE %s",
+                                           [session_obj.session_id])
 
-        return render(request, 'teacher/teacher_projects.html', {'projects':project_objs, 'session':session_obj})
+        return render(request, 'teacher/teacher_projects.html', {'projects': project_objs, 'session': session_obj})
     else:
         if request.user.is_authenticated and user_type.objects.get(user=request.user).is_student:
             return redirect('shome')
 
+
 def projectdetails(request, session_id, project_id):
-    #print(project_title, session)
+    # print(project_title, session)
     if request.user.is_authenticated:
         if request.method == 'POST':
             if request.POST.get('delete') is not None:
@@ -120,7 +126,7 @@ def projectdetails(request, session_id, project_id):
 
         files = file.objects
         project_obj = get_object_or_404(project, pk=project_id)
-        return render(request, 'upload.html', {'project_obj':project_obj, 'files':files})
+        return render(request, 'upload.html', {'project_obj': project_obj, 'files': files})
     else:
         print("TEACHER BA STUDENT NA")
         return HttpResponse(request, '<h1>TEACHER BA STUDENT NA</h1>')

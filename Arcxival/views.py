@@ -5,10 +5,14 @@ from django.conf import settings
 from customuser.models import user_type
 from teacher.models import course, session
 from student.models import project, file
+from django.contrib import messages
 
+
+def landing(request):
+    return render(request,'landing.html')
 
 def home(request):
-    if(request.method == 'POST'):
+    if (request.method == 'POST'):
         print("ashche")
         email = request.POST.get('email')
         password = request.POST.get('password')
@@ -28,47 +32,50 @@ def home(request):
 
     return render(request, 'home.html')
 
+
 def logout_view(request):
     logout(request)
     return redirect('/')
 
+
 def archive_courses(request):
-    if request.user.is_authenticated:
-        courses = course.objects
-        print(courses)
-        return render(request, 'archive_courses.html', {'courses': courses})
-    else:
-        return redirect('/')
+    courses = course.objects
+    print(courses)
+    return render(request, 'archive_courses.html', {'courses': courses})
+
 
 def archive_Sessions(request, pk):
-    if request.user.is_authenticated:
-        print("here",pk)
-        session_obj_forward = session.objects.filter(course_code_id=pk);
-        session_obj_back = session.objects.filter(pk=pk);
-        print(session_obj_forward)
-        print(session_obj_back)
-        if session_obj_forward:
-            print("piche", session_obj_forward)
-            return render(request, 'archive_Sessions.html', {'sessions':session_obj_forward})
-        else:
-            return render(request, 'archive_Sessions.html', {'sessions': session_obj_back})
+    print("here", pk)
+    if len(pk) > 6:
+        pk = pk[:6]
+    session_obj_forward = session.objects.filter(course_code_id=pk);
+    session_obj_back = session.objects.filter(pk=pk);
+    print(session_obj_forward)
+    print(session_obj_back)
+    if session_obj_forward:
+        print("piche", session_obj_forward)
+        return render(request, 'archive_Sessions.html', {'sessions': session_obj_forward})
     else:
-        return redirect('/')
+        return render(request, 'archive_Sessions.html', {'sessions': session_obj_back})
 
-def archive_Projects(request,pk):
-    if request.user.is_authenticated:
-        session_ob = session.objects.get(pk=pk)
-        project_ob = project.objects.filter(session_id=pk)
-        return render(request, 'archive_Projects.html.', {'projects':project_ob, 'session': session_ob})
-    else:
-        return redirect('/')
+
+def archive_redirect_noid(request):
+    messages.add_message(request, messages.ERROR, "LOGIN TO VIEW PROJECT FILES")
+    return redirect('archive_courses')
+
+
+def archive_Projects(request, pk):
+    session_ob = session.objects.get(pk=pk)
+    project_ob = project.objects.filter(session_id=pk)
+    return render(request, 'archive_Projects.html.', {'projects': project_ob, 'session': session_ob})
+
 
 def projectdetails(request, session_id, project_id):
-    #print(project_title, session)
+    # print(project_title, session)
     if request.user.is_authenticated:
         if request.method == 'POST':
             for uploaded_file in request.FILES.getlist('file'):
-                #uploaded_file = request.FILES['file']
+                # uploaded_file = request.FILES['file']
                 # fs = FileSystemStorage()
                 # fs.save(uploaded_file.name, uploaded_file)
                 ext = ""
@@ -92,10 +99,9 @@ def projectdetails(request, session_id, project_id):
         print("there", project_id)
         files = file.objects
         project_obj = get_object_or_404(project, pk=project_id)
-        return render(request, 'upload.html', {'project_obj':project_obj, 'files':files})
+        return render(request, 'upload.html', {'project_obj': project_obj, 'files': files})
     else:
-        print("TEACHER BA STUDENT NA")
-        return HttpResponse(request, '<h1>TEACHER BA STUDENT NA</h1>')
+        return redirect('home')
 
 def delete_file(self, *args, **kwargs):
     print(self)

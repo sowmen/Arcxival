@@ -49,21 +49,16 @@
 
     <!-- custom javascript -->
     <script src="{% static "js/script.js" %}" type="text/javascript"></script>
-
     <script type="text/javascript">
-        /// some script
-
-        // jquery ready start
         $(document).ready(function () {
-            // jQuery code
-
+            $('#myModal').modal('show');
         });
-        // jquery end
     </script>
+
 </head>
 <body style="background-color: #F8F8F8;">
 
-<nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#000a12;height:70px;">
+<nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#223272;height:70px;">
     <div class="container">
         <a class="navbar-brand" href="#"
            style="color:#eeeeee; font-family: azonix; padding-bottom: 15px; font-size: 28px">
@@ -76,11 +71,16 @@
                                                                                         href="{% url 'archive_courses' %}"
                                                                                         style="color:#eeeeee;">ARCHIVE</a>
                 </li>
-                <li class="nav-item" role="presentation"><a class="anim nav-link active" href="{% url 'logout' %}"
-                                                            style="color:#eeeeee;">LOGOUT</a></li>
-{#                <li class="nav-item" role="presentation"><a class="nav-link"#}
-{#                                                            style="padding-top:1px;padding-left:39px;color:#eeeeee;"#}
-{#                                                            href="#"><i class="icon ion-android-settings"></i></a></li>#}
+                {% if user.is_authenticated %}
+                    <li class="nav-item" role="presentation"><a class="anim nav-link active" href="{% url 'logout' %}"
+                                                                style="color:#eeeeee;">LOGOUT</a></li>
+                {% else %}
+                    <li class="nav-item" role="presentation"><a class="anim nav-link active" href="{% url 'home' %}"
+                                                                style="color:#eeeeee;">LOGIN</a></li>
+                {% endif %}
+                {#                <li class="nav-item" role="presentation"><a class="nav-link"#}
+                {#                                                            style="padding-top:1px;padding-left:39px;color:#eeeeee;"#}
+                {#                                                            href="#"><i class="icon ion-android-settings"></i></a></li>#}
             </ul>
         </div>
     </div>
@@ -93,8 +93,8 @@
             style="padding-left:6px;padding-top:13px;margin-left:-5px;padding-bottom:1px;margin-bottom:9px;font-size:25px;font-family: 'Open Sans', sans-serif;">
             COURSES </h3>
         <hr style="background-color: #0d0d0d">
-    <br>
-    <br>
+        <br>
+        <br>
 
         <div class="row-sm">
             {% for course in courses.all %}
@@ -122,7 +122,16 @@
     </div>
 
 </section>
-
+{% if messages %}
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" id="myModal"
+         aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                {{ message }}
+            </div>
+        </div>
+    </div>
+{% endif %}
 
 <footer style="height: 200px;background-color: #F8F8F8;"></footer>
 

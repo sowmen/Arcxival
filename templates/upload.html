@@ -47,7 +47,7 @@
     <style>
 
         thead th {
-            background-color: #1c313a;
+            background-color: #4A7AB5;
             color: #ffffff;
             text-indent: 13px;
         }
@@ -98,9 +98,9 @@
 <!------------------------------------------------------Nav bar ends here---------------------------------------------------->
 
 {% block body %}
-    <SECTION style="margin-top: 100px;margin-bottom: 100px;">
-        <DIV id="dropzone" class="container">
-            <div class="container card">
+    <SECTION style="margin-top: 100px;margin-bottom: 100px;" >
+        <DIV id="dropzone" class="container" >
+            <div class="container card" >
                 <FORM class="dropzone needsclick" id="demo-upload"
                       action="{% url 'projectdetails' project_obj.project_id %}" method="POST"
                       enctype="multipart/form-data">
@@ -108,7 +108,7 @@
                     <input type="file" , name="file" form="demo-upload" multiple hidden/>
                     <input type="hidden" value="{{ project_obj.project_id }}" name="project_id" form="demo-upload">
                     <DIV class="dz-message needsclick">
-                        <p><i class="fas fa-file-upload" style="font-size: 2.5em;"></i>
+                        <p ><i class="fas fa-file-upload" style="font-size: 2.5em;"></i>
                         <p>Drop files here or click to upload.</p>
                         </p><BR>
                     </DIV>

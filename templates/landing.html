@@ -1,0 +1,397 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <style type="text/css">
+        html,
+        body,
+        header,
+        .view {
+            height: 100%;
+        }
+
+        @media (max-width: 740px) {
+
+            html,
+            body,
+            header,
+            .view {
+                height: 1000px;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+
+            html,
+            body,
+            header,
+            .view {
+                height: 650px;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331 !important;
+            }
+        }
+
+
+        p {
+
+            font-family: 'Armio', sans-serif;
+        }
+    </style>
+
+</head>
+
+
+<body style="background-color: #F8F8F8;">
+
+
+<nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#223272;height:70px;">
+    <div class="container">
+        <a class="navbar-brand" href="#"
+           style="color:#eeeeee; font-family: azonix; padding-bottom: 15px; font-size: 28px">
+            <span class="brand-text">ARC</span><span id="X">X</span><span class="brand-text">IVAL</span></a>
+        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation"><a class="anim nav-link active" href="{% url 'home' %}"
+                                                            style="color:#eeeeee;">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Navbar -->
+<!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container"> -->
+
+<!-- Brand -->
+<!-- <a class="navbar-brand" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+  <strong>MDB</strong>
+</a> -->
+
+<!-- Collapse -->
+<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button> -->
+
+<!-- Links -->
+<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+
+<!-- Left -->
+<!-- <ul class="navbar-nav mr-auto">
+  <li class="nav-item active">
+    <a class="nav-link" href="#">Home
+      <span class="sr-only">(current)</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About MDB</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">Free download</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Free tutorials</a>
+  </li>
+</ul> -->
+
+<!-- Right -->
+<!-- <ul class="navbar-nav nav-flex-icons">
+  <li class="nav-item">
+    <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded" target="_blank" style="width: 200%;text-align: center;">
+      Login
+    </a>
+  </li>
+</ul>
+
+</div>
+
+</div>
+</nav> -->
+<!-- Navbar -->
+
+
+<!-- Full Page Intro -->
+<div class="view full-page-intro" style="height:80%;width: 100%;">
+
+    <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay
+           muted loop>
+        <source src="https://mdbootstrap.com/img/video/Lines-min.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+        <!-- Content -->
+        <div class="container">
+
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+
+                <!--Grid column-->
+                <div class=" white-text text-center">
+
+                    <h2 class="display-3" style="font-family: 'Karla', sans-serif;">
+                        SUST Project Archive
+                    </h2>
+
+
+                    <p style="font-size: 150%">
+                        <strong>Arcxival is a project and resource managemnet archive.</strong>
+                    </p>
+
+                    <p class="mb-4 d-none d-md-block" style="font-size: 120%">
+                        <strong>Arcxival contains seperate layouts for Teachers and Students to maintain, manage and
+                            store projects, files, resources of any kind. <br>
+                            Visit the archive to check out the projects and get an iudea about all the research and work
+                            happening in SUST.</strong>
+                    </p>
+
+                    <a target="_blank" href="{% url 'archive_courses' %}" class="btn btn-indigo"
+                       style="width: 20%;height: 18%;font-size: 100%;">Visit Archive
+                    </a>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </div>
+        <!-- Content -->
+
+    </div>
+    <!-- Mask & flexbox options-->
+
+</div>
+<!-- Full Page Intro -->
+
+
+<!--Main layout-->
+<main>
+    <div class="container">
+
+        <!--Section: Main info-->
+        <section class="mt-5 wow fadeIn">
+
+            <!--Grid row-->
+            <div class="row" style="margin-bottom: 4%;">
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <img src="{% static 'img/MyProjects.jpg' %}" class="img-fluid z-depth-1-half" alt="">
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <!-- Main heading -->
+                    <h3 class="h3 mb-3">Intuitive Student Dashboard</h3>
+                    <p>
+                        <strong>Arcxival</strong> connects student projects with teachers for easy control.<br>
+                        See all your projects in one place divided by courses and fields. Search and update files
+                        anytime anywhere.</p>
+                    <br><br><br>
+                    <!-- Main heading -->
+
+                    <hr>
+
+                    <p>
+                        One stop place for all your projects. Contains a curated list of projects by
+                        <strong>Course</strong>, <strong>Session</strong> or <strong>Group</strong>.
+                    </p>
+
+                    <!-- CTA -->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+            <hr>
+            <!--Section: Main info-->
+
+            <!--Grid row-->
+            <div class="row" style="margin-top: 5%;margin-bottom: 5%;">
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <!-- Main heading -->
+                    <h3 class="h3 mb-3">Flexibility for Teachers</h3>
+                    <p>The Teacher Dashboard provides access to all <strong>Courses</strong> and
+                        <strong>Sessions</strong> maintained by the Teacher.
+                        <strong>Arcxival </strong>provides seperate panels to <strong>Create </strong>,
+                        <strong>Delete</strong> Sessions and Courses.
+                        This provides ease of access and managemnet to Teachers. </p>
+
+                    <!-- Main heading -->
+
+                    <br><br><br>
+                    <hr>
+                    <p>
+                        Contains seperate panels to <strong>Create</strong> new Courses, Sessions<br> and end running
+                        ones.
+                    </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <img src="{% static 'img/CreateSession.png' %}" class="img-fluid z-depth-1-half" alt="">
+
+                </div>
+                <!--Grid column-->
+
+
+            </div>
+            <!--Grid row-->
+
+            <hr>
+
+            <!--Grid row-->
+            <div class="row" style="margin-top: 5%;">
+
+                <!--Grid column-->
+                <div class="col-md-16 mb-5" style="margin-left: 2%;margin-right: 2%;">
+
+                    <img src="{% static 'img/upload-pic.png' %}" class="img-fluid z-depth-1-half" alt=""
+                         style="height: 90%;width: 100%;">
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-12 mb-4" style="text-align:center;">
+
+                    <!-- Main heading -->
+                    <h3 class="h3 mb-3">Upload Everything</h3>
+                    <p><strong>Arcxival </strong> has a <strong>Drag and Drop</strong> file uploading mechanism with
+                        live thumbnails, size, data chunking and cancellation options.<br>
+                        See all the files you uploaded for a project in one place. <br>
+                        <strong>Download </strong> or <strong>Delete</strong> files as necessary.
+
+                        <!-- Main heading -->
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </section>
+        <!--Section: Main info-->
+
+
+    </div>
+</main>
+
+
+
+
+
+<!--Footer-->
+<!-- Footer -->
+<footer class="page-footer font-small" style="background-color: #cfd8dc; color: #37474f;height: 20%; margin-top: 20%;">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+                <h1 class="mt-4" tyle="v" style="font-size: 30px;">Behind The Scene</h1>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-1.5 mx-auto">
+
+                <h5 class="font-weight-bold text-uppercase mt-4 mb-1">Sowmen Das</h5>
+                <h6>Session : 2016-17</h6>
+                <style media="screen">
+                    a:hover {
+                        color: #26c6da;
+                    }
+                </style>
+                <a href="https://www.sust.edu/d/cse" style="color:  #37474f;  margin-bottom: 20px;">CSE</a>,<a
+                    href="https://www.sust.edu/" style="color:  #37474f;margin-bottom: 20px;">SUST</a>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2.2 mx-auto">
+
+                <h5 class="font-weight-bold text-uppercase mt-4 mb-1">Mohammad Faiyaz Khan</h5>
+                <h6>Session : 2016-17</h6>
+                <a href="https://www.sust.edu/d/cse" style="color:  #37474f;">CSE</a>,<a href="https://www.sust.edu/"
+                                                                                         style="color:  #37474f;">SUST</a>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3.5 mx-auto">
+
+                <h5 class="font-weight-bold text-uppercase mt-4 mb-1">S.M. Sadiq-Ur-Rahman Shifath</h5>
+                <h6>Session : 2016-17</h6>
+                <a href="https://www.sust.edu/d/cse" style="color:  #37474f;">CSE</a>,<a href="https://www.sust.edu/"
+                                                                                         style="color:  #37474f;">SUST</a>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!--Grid row-->
+    </div>
+</footer>
+<!-- Footer -->
+<!--/.Footer-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Initializations -->
+<script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+</script>
+</body>
+
+</html>
