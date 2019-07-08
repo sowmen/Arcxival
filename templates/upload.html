@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static "cssp/mdb.min.css" %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static "cssp/style.css" %}" rel="stylesheet">
+    <!-- MDBootstrap Datatables  -->
+    <link href="{% static "cssp/addons/datatables.min.css" %}" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+    <!--DO NOT TOUCH HERE-- DROPZONE IMPORTS--->
+    <script src="{% static 'dist/dropzone.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'dist/dropzone.css' %}">
+    <!-- DO NOT EDIT ABOVE-->
+    <style media="screen">
+        .dtHorizontalVerticalExampleWrapper {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .dtHorizontalVerticalExample th, td {
+            white-space: nowrap;
+        }
+
+        table.dataTable thead .sorting:after,
+        table.dataTable thead .sorting:before,
+        table.dataTable thead .sorting_asc:after,
+        table.dataTable thead .sorting_asc:before,
+        table.dataTable thead .sorting_asc_disabled:after,
+        table.dataTable thead .sorting_asc_disabled:before,
+        table.dataTable thead .sorting_desc:after,
+        table.dataTable thead .sorting_desc:before,
+        table.dataTable thead .sorting_desc_disabled:after,
+        table.dataTable thead .sorting_desc_disabled:before {
+            bottom: .5em;
+        }
+    </style>
+    <style>
+
+        thead th {
+            background-color: #1c313a;
+            color: #ffffff;
+            text-indent: 13px;
+        }
+
+        tbody tr {
+
+            text-indent: 10px;
+            background-color: white;
+            color: black;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        tbody tr[data-href]:hover {
+            cursor: pointer;
+            background-color: #62757f;
+            color: white;
+        }
+    </style>
+    <style>
+        div.card {
+            width: 1000px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            padding-left: 0px;
+        }
+    </style>
+    <style media="screen">
+        h1 {
+            text-align: center;
+        }
+
+        .dropzone {
+            background: white;
+            border-radius: 5px;
+            border: 2px rgb(0, 135, 247);
+            border-image: none;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+
+
+{% endblock %}
+
+
+<!------------------------------------------------------Nav bar ends here---------------------------------------------------->
+
+{% block body %}
+    <SECTION style="margin-top: 100px;margin-bottom: 100px;">
+        <DIV id="dropzone" class="container">
+            <div class="container card">
+                <FORM class="dropzone needsclick" id="demo-upload"
+                      action="{% url 'projectdetails' project_obj.project_id %}" method="POST"
+                      enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="file" , name="file" form="demo-upload" multiple hidden/>
+                    <input type="hidden" value="{{ project_obj.project_id }}" name="project_id" form="demo-upload">
+                    <DIV class="dz-message needsclick">
+                        <p><i class="fas fa-file-upload" style="font-size: 2.5em;"></i>
+                        <p>Drop files here or click to upload.</p>
+                        </p><BR>
+                    </DIV>
+                </FORM>
+            </div>
+            <p></p>
+            <button class="btn btn-default btn-lg active" form="demo-upload" style="margin-left: 415px; width: 300px;"
+                    aria-pressed="true"> Upload
+            </button>
+            <!-- <button type="button" class="btn btn-default btn-lg" style="margin-left: 415px; width: 300px;">  Upload  </button> -->
+        </DIV>
+
+        <br/>
+
+        <div class="container" style="margin-top: 100px;">
+            <div>
+                <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Project Files of  "{{ project_obj.project_title }}"</h3>
+                <div class="card-body" style="background-color: WHITE">
+                    <div id="table">
+                        <table class="table table-bordered table-sm dtHorizontalVerticalExample"
+                               cellspacing="0" width="100%">
+                            <thead>
+                            <tr>
+                                <th>Filename</th>
+                                <th>File Size</th>
+                                <th>Download</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for file in files.all %}
+                                {% if file.project_id == project_obj %}
+                                    <tr>
+                                        <td>{{ file.file_name }}</td>
+                                        <td>{{ file.file_size }}</td>
+                                        <td>
+                                            <a href="{{ file.file_content.url }}" class="btn btn-default btn-sm my-0 active"
+                                               style="width:125px;padding-left: 18px; padding-right: 25px;"
+                                               role="button"
+                                               aria-pressed="true">Download</a>
+                                        </td>
+
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </SECTION>
+
+
+{% endblock %}
+
+{% block scripts %}
+
+    <script type="text/javascript" src="{% static "jsp/jquery-3.4.1.min.js" %}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{% static "jsp/popper.min.js" %}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{% static "jsp/mdb.min.js" %}"></script>
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="{% static "jsp/addons/datatables.min.js" %}"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dtHorizontalVerticalExample').DataTable({
+                "scrollX": true,
+                "scrollY": 300,
+            });
+            $('.dataTables_length').addClass('bs-select');
+        });
+    </script>
+
+{% endblock %}
