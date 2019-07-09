@@ -41,7 +41,13 @@ def logout_view(request):
 def archive_courses(request):
     courses = course.objects
     print(courses)
-    return render(request, 'archive_courses.html', {'courses': courses})
+    type = ""
+    if request.user.is_authenticated:
+        if user_type.objects.get(user=request.user).is_teach:
+            type = "teach"
+        else:
+            type = "student"
+    return render(request, 'archive_courses.html', {'courses': courses, 'type':type})
 
 
 def archive_Sessions(request, pk):
@@ -52,11 +58,19 @@ def archive_Sessions(request, pk):
     session_obj_back = session.objects.filter(pk=pk);
     print(session_obj_forward)
     print(session_obj_back)
+
+    type = ""
+    if request.user.is_authenticated:
+        if user_type.objects.get(user=request.user).is_teach:
+            type = "teach"
+        else:
+            type = "student"
+
     if session_obj_forward:
         print("piche", session_obj_forward)
-        return render(request, 'archive_Sessions.html', {'sessions': session_obj_forward})
+        return render(request, 'archive_Sessions.html', {'sessions': session_obj_forward, 'type':type})
     else:
-        return render(request, 'archive_Sessions.html', {'sessions': session_obj_back})
+        return render(request, 'archive_Sessions.html', {'sessions': session_obj_back, 'type':type})
 
 
 def archive_redirect_noid(request):
@@ -67,7 +81,15 @@ def archive_redirect_noid(request):
 def archive_Projects(request, pk):
     session_ob = session.objects.get(pk=pk)
     project_ob = project.objects.filter(session_id=pk)
-    return render(request, 'archive_Projects.html.', {'projects': project_ob, 'session': session_ob})
+
+    type = ""
+    if request.user.is_authenticated:
+        if user_type.objects.get(user=request.user).is_teach:
+            type = "teach"
+        else:
+            type = "student"
+
+    return render(request, 'archive_Projects.html.', {'projects': project_ob, 'session': session_ob, 'type':type})
 
 
 def projectdetails(request, session_id, project_id):
@@ -99,7 +121,14 @@ def projectdetails(request, session_id, project_id):
         print("there", project_id)
         files = file.objects
         project_obj = get_object_or_404(project, pk=project_id)
-        return render(request, 'upload.html', {'project_obj': project_obj, 'files': files})
+
+        type = ""
+        if user_type.objects.get(user=request.user).is_teach:
+            type = "teach"
+        else:
+            type = "student"
+
+        return render(request, 'upload.html', {'project_obj': project_obj, 'files': files, 'type':type})
     else:
         return redirect('home')
 

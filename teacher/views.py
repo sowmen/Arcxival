@@ -40,7 +40,8 @@ def thome(request):
             data.append({'session': x, 'title': tit})
         print(data)
 
-        return render(request, 'teacher/teach-home.html', {'data': data})
+        type = "teach"
+        return render(request, 'teacher/teach-home.html', {'data': data, 'type':type})
     elif request.user.is_authenticated and user_type.objects.get(user=request.user).is_student:
         return redirect('shome')
     else:
@@ -60,7 +61,9 @@ def createsession(request):
                 c.save()
 
         course_obj = course.objects
-        return render(request, 'teacher/create-session.html', {'courses': course_obj})
+
+        type = "teach"
+        return render(request, 'teacher/create-session.html', {'courses': course_obj, 'type':type})
     else:
         if request.user.is_authenticated and user_type.objects.get(user=request.user).is_student:
             return redirect('shome')
@@ -73,7 +76,8 @@ def batchinfo(request, session_id):
         project_objs = project.objects.raw("select * from student_project where session_id LIKE %s",
                                            [session_obj.session_id])
 
-        return render(request, 'teacher/teacher_projects.html', {'projects': project_objs, 'session': session_obj})
+        type = "teach"
+        return render(request, 'teacher/teacher_projects.html', {'projects': project_objs, 'session': session_obj, 'type':type})
     else:
         if request.user.is_authenticated and user_type.objects.get(user=request.user).is_student:
             return redirect('shome')
@@ -126,7 +130,12 @@ def projectdetails(request, session_id, project_id):
 
         files = file.objects
         project_obj = get_object_or_404(project, pk=project_id)
-        return render(request, 'upload.html', {'project_obj': project_obj, 'files': files})
+
+        type = ""
+        if user_type.objects.get(user=request.user).is_teach:
+            type = "teach"
+        else:
+            type = "student"
+        return render(request, 'upload.html', {'project_obj': project_obj, 'files': files, 'type':type})
     else:
-        print("TEACHER BA STUDENT NA")
-        return HttpResponse(request, '<h1>TEACHER BA STUDENT NA</h1>')
+        return redirect('home')

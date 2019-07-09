@@ -61,8 +61,9 @@ def shome(request):
             [student_obj.reg_number, student_obj.reg_number, student_obj.reg_number])
         for x in projects:
             print(x)
-        # print(projects)
-        return render(request, 'student/student-home.html', {'projects': projects})
+        # print(projects
+        type = "student"
+        return render(request, 'student/student-home.html', {'projects': projects, 'type':type})
 
     elif request.user.is_authenticated and user_type.objects.get(user=request.user).is_teach:
         return redirect('thome')
@@ -74,7 +75,8 @@ def load_sessions(request):
     if request.user.is_authenticated and user_type.objects.get(user=request.user).is_student:
         course_code = request.GET.get('course_code')
         sessions = session.objects.filter(course_code=course_code)
-        return render(request, 'student/session-dropdown-options.html', {'sessions': sessions})
+        type = "student"
+        return render(request, 'student/session-dropdown-options.html', {'sessions': sessions, 'type':type})
     else:
         if request.user.is_authenticated and user_type.objects.get(user=request.user).is_teach:
             return redirect('thome')
@@ -85,8 +87,9 @@ def newproject(request):
         course_ob = course.objects
         session_ob = session.objects
         student_ob = student.objects.exclude(reg_number='000')
+        type = "student"
         return render(request, 'student/new-project.html',
-                      {'course': course_ob, 'student': student_ob, 'sessions': session_ob})
+                      {'course': course_ob, 'student': student_ob, 'sessions': session_ob, 'type':type})
     else:
         if request.user.is_authenticated and user_type.objects.get(user=request.user).is_teach:
             return redirect('thome')
@@ -138,9 +141,14 @@ def projectdetails(request, project_id):
 
         files = file.objects
         project_obj = get_object_or_404(project, pk=project_id)
-        return render(request, 'upload.html', {'project_obj': project_obj, 'files': files})
+        type = ""
+        if user_type.objects.get(user=request.user).is_teach:
+            type = "teach"
+        else:
+            type = "student"
+        return render(request, 'upload.html', {'project_obj': project_obj, 'files': files, 'type':type})
     else:
-        return redirect('/')
+        return redirect('home')
 
 
 # def delete_file(self, *args, **kwargs):

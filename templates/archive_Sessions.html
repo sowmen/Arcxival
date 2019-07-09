@@ -61,6 +61,7 @@
             <br>
             <br>
             <div class="row-sm">
+
                 {% for session in sessions.all %}
                     <div class="col-md-3 col-sm-6">
                         <a href="{% url 'archive_Projects' session.pk %}">
@@ -75,6 +76,8 @@
                             </figure> <!-- card // -->
                         </a>
                     </div>
+                {% empty %}
+                    <h4 style="margin-left: 20px;">NO SESSIONS YET</h4>
                 {% endfor %}
 
 

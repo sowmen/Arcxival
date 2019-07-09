@@ -32,7 +32,12 @@
 <body style="background-color: #F8F8F8;">
 <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#223272;height:70px;">
     <div class="container">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand"
+           {% if type == "student" %}
+           href="{% url 'shome' %}"
+           {% elif type == "teach" %}
+           href="{% url 'thome' %}"
+           {% endif %}
            style="color:#eeeeee; font-family: azonix; padding-bottom: 15px; font-size: 28px">
             <span class="brand-text">ARC</span><span id="X">X</span><span class="brand-text">IVAL</span></a>
         <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
