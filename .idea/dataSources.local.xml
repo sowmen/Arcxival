@@ -6,18 +6,11 @@
       <user-name>postgres</user-name>
     </data-source>
     <data-source name="arcxival@localhost" uuid="16815812-4d05-4f41-8b59-9f3d5ea52018">
-      <database-info product="MariaDB" version="10.3.15-MariaDB" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.4.1" dbms="MARIADB" exact-version="10.3.15" exact-driver-version="2.4">
-        <extra-name-characters>#@</extra-name-characters>
-        <identifier-quote-string>`</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>root</user-name>
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MARIADB" exact-version="0" />
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
     <data-source name="Django default2" uuid="55bdfe2c-05b3-4be7-b23e-1fd82998b143">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
-      <user-name>root</user-name>
     </data-source>
   </component>
 </project>

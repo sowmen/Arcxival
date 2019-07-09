@@ -151,9 +151,10 @@
                                                aria-pressed="true">Download</a>
                                         </td>
                                         <td>
-                                            <form method="post" action="">
+                                            <form method="post" action="{% url 'delete_file' file.pk %}">
                                                 {% csrf_token %}
-                                                <button type="submit" value="{{ file.file_content }}" class="btn btn-danger btn-sm my-0 active" style="width:125px;padding-left: 18px; padding-right: 25px; margin-left: 0px;"  aria-pressed="true" name="delete">Delete</button>
+                                                <button type="submit" value="{{ file.project_id_id }}" class="btn btn-danger btn-sm my-0 active" style="width:125px;padding-left: 18px; padding-right: 25px; margin-left: 0px;"  aria-pressed="true" name="delete">Delete</button>
+                                                <input type="hidden" value="{{ file.file_name }}" name="filename">
                                             </form>
                                         </td>
 

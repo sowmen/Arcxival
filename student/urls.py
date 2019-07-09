@@ -8,7 +8,7 @@ from django.conf.urls.static import static
 urlpatterns = [
 
     path('', views.shome, name = 'shome'),
-    path('media/<str:path>/', views.delete_file, name = "delete_file"),
+    path('media/<str:pk>/', views.delete_file, name = "delete_file"),
     path('newproject/', views.newproject, name = 'newproject'),
     path('newproject/ajax/load-sessions/', views.load_sessions, name='ajax_load_sessions'),
    # path('upload/', views.upload, name='upload'),

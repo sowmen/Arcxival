@@ -7,6 +7,8 @@ from teacher.models import course, session
 from student.models import project, file
 from django.contrib import messages
 
+def landing(request):
+    return render(request,'base.html')
 
 def landing(request):
     return render(request,'landing.html')
@@ -89,7 +91,7 @@ def archive_Projects(request, pk):
         else:
             type = "student"
 
-    return render(request, 'archive_Projects.html.', {'projects': project_ob, 'session': session_ob, 'type':type})
+    return render(request, 'archive_Projects.html', {'projects': project_ob, 'session': session_ob, 'type':type})
 
 
 def projectdetails(request, session_id, project_id):
@@ -132,7 +134,7 @@ def projectdetails(request, session_id, project_id):
     else:
         return redirect('home')
 
-def delete_file(self, *args, **kwargs):
-    print(self)
-    self.file_content.delete()
-    super.delete(*args, **kwargs)
+# def delete_file(self, *args, **kwargs):
+#     print(self)
+#     self.file_content.delete()
+#     super.delete(*args, **kwargs)

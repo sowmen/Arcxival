@@ -98,23 +98,6 @@ def newproject(request):
 def projectdetails(request, project_id):
     if request.user.is_authenticated:
         if request.method == 'POST':
-            if request.POST.get('delete') is not None:
-                path = request.POST.get('delete')
-                print(path)
-                full_path = os.path.join(settings.MEDIA_ROOT, path)
-                full_path = full_path.replace("/", "\\")
-                print(full_path)
-                try:
-                    os.remove(full_path)
-                except FileNotFoundError:
-                    return redirect(request.path_info)
-
-                fileob = file.objects.get(file_content=request.POST.get('delete'))
-
-                fileob.delete()
-
-
-            else:
                 for uploaded_file in request.FILES.getlist('file'):
                     # uploaded_file = request.FILES['file']
                     # fs = FileSystemStorage()
@@ -153,11 +136,24 @@ def projectdetails(request, project_id):
 
 # def delete_file(self, *args, **kwargs):
 #     print(self)
-#     self.file_content.url.delete()
+#     self.file_name.delete()
 #     super.delete(*args, **kwargs)
 
 def delete_file(request, pk):
+    type = ""
+    if user_type.objects.get(user=request.user).is_teach:
+        type = "teach"
+    else:
+        type = "student"
+    print("here--------------------------")
     if (request.method == "POST"):
-        file_obj = file.objects.get(file_content=pk)
-        file_obj.delete()
+        if request.POST.get('delete') is not None:
+            project_id = request.POST.get('delete')
+            file_obj = file.objects.get(pk=pk)
+            file_obj.delete()
+            # os.remove(os.path.join(settings.MEDIA_ROOT, request.POST.get('filename')))
+            # print("vbvbvbvbv")
+            project_ob = project.objects.get(project_id=project_id)
+            file_ob2 = file.objects
+            return render(request, 'upload.html', {'project_obj': project_ob, 'files': file_ob2, 'type':type})
     return redirect('upload.html')

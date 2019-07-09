@@ -43,7 +43,7 @@ class file(models.Model):
     def get_file_path(self, filename):
         return os.path.join(self.project_id.course_code.course_code, self.project_id.project_id, filename)
 
-    file_content = models.FileField(upload_to=get_file_path, null=True)
+    file_content = models.FileField(upload_to='', null=True)
 
     def __str__(self):
         return "(" + self.project_id.project_id + ")" + self.file_name
